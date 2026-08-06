@@ -116,12 +116,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                <a href="https://penaelit.com/" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
                     <div class="w-8 h-8 bg-brand-900 text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-md">
                         <i class="fa-solid fa-pen-nib text-sm"></i>
                     </div>
-                    <span class="font-bold text-xl text-brand-900 tracking-tight" href=""https://penaelit.com/>Pena Elit</span>
-                </div>
+                    <span class="font-bold text-xl text-brand-900 tracking-tight">Pena Elit</span>
+                </a>
                 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
@@ -253,8 +253,8 @@
             </a>
             <div class="flex gap-4">
                 <span class="text-sm font-bold text-slate-400">Bagikan:</span>
-                <a href="#" class="text-brand-600 hover:text-brand-800"><i class="fa-brands fa-whatsapp text-xl"></i></a>
-                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fa-brands fa-facebook text-xl"></i></a>
+                <a href="#" onclick="window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(document.title + ' ' + window.location.href)); return false;" class="text-brand-600 hover:text-brand-800" title="Bagikan ke WhatsApp"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href)); return false;" class="text-blue-600 hover:text-blue-800" title="Bagikan ke Facebook"><i class="fa-brands fa-facebook text-xl"></i></a>
             </div>
         </div>
     </section>
