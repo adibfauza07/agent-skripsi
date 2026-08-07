@@ -34,6 +34,356 @@
       "serviceArea": {
         "@type": "GeoCircle",
         "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": -6.5386,
+          "longitude": 107.4433
+        },
+        "geoRadius": "50000"
+      }
+    }
+    </script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="https://penaelit.com/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS (Compiled) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Canonical Tag for SEO -->
+    <link rel="canonical" href="https://penaelit.com/">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 glass transition-all duration-300 shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="https://penaelit.com/" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <div class="w-8 h-8 bg-brand-900 text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-md">
+                        <i class="fa-solid fa-pen-nib text-sm"></i>
+                    </div>
+                    <span class="font-bold text-xl text-brand-900 tracking-tight">Pena Elit</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html#layanan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Layanan</a>
+                    <a href="index.html#keunggulan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Keunggulan</a>
+                    <a href="blog.html" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Blog</a>
+                    <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20akademik%20yang%20tersedia." target="_blank" class="bg-brand-900 hover:bg-brand-800 text-white px-5 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Hubungi Kami
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-brand-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-lg absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html#layanan" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Layanan Kami</a>
+                <a href="index.html#keunggulan" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Keunggulan</a>
+                <a href="blog.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Blog</a>
+                <div class="mt-4 px-3">
+                    <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20akademik%20yang%20tersedia." target="_blank" class="block w-full text-center bg-brand-900 text-white px-4 py-3 rounded-lg font-medium shadow-md">
+                        Hubungi Admin
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden hero-pattern">
+        <!-- Background decorative elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 rounded-full bg-brand-100 opacity-50 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-blue-100 opacity-50 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-brand-50 border border-brand-100 text-brand-700 font-semibold text-sm tracking-wide shadow-sm">
+                    <i class="fa-solid fa-graduation-cap mr-2"></i> Solusi Mahasiswa Tingkat Akhir
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+                    Pusing Skripsi Revisi Terus? <br/>
+                    <span class="gradient-text">Jasa Skripsi Purwakarta</span> & <span class="gradient-text">Joki Tugas Kuliah</span><br/> Siap Bantu!
+                </h1>
+                
+                <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed">
+                    Kami hadir sebagai mitra akademik terpercaya untuk membantu menyelesaikan tugas. Mulai dari <strong>Jasa Perbaikan Format Skripsi Word</strong>, <strong>Jasa Pembuatan Template Skripsi sesuai Pedoman Kampus</strong>, hingga <strong>Bimbingan dan Olah Data Skripsi</strong>.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <!-- Primary CTA - Link to WA for Template -->
+                    <a href="https://wa.me/628211541284?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20memesan%20Jasa%20Pembuatan%20Template%20Skripsi%20Custom%20sesuai%20pedoman%20kampus%20saya." target="_blank" class="w-full sm:w-auto bg-accent-500 hover:bg-accent-600 text-white text-lg font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-pen-ruler"></i> Pesan Template Custom
+                    </a>
+                    
+                    <!-- Secondary CTA - Link to WA for Konsultasi -->
+                    <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20konsultasi%20gratis%20mengenai%20masalah%20skripsi%2Ftugas%20saya." target="_blank" class="w-full sm:w-auto bg-white border-2 border-brand-900 text-brand-900 hover:bg-brand-50 text-lg font-bold py-3.5 px-8 rounded-xl shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl text-green-500"></i> Konsultasi Gratis
+                    </a>
+                </div>
+                
+                <p class="mt-6 text-sm text-slate-500 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-green-500"></i> 100% Rahasia Terjamin & Aman
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <img src="stres.webp" alt="Jasa Skripsi Purwakarta - Mahasiswa Pusing Skripsi" loading="lazy" class="rounded-2xl shadow-2xl rotate-1 hover:rotate-0 transition-transform duration-500 w-full object-cover">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Sering Ngalamin Hal Ini?</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mt-1">
+                                <i class="fa-solid fa-xmark text-red-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-800">Butuh Jasa Perbaikan Format Skripsi Word?</h3>
+                                <p class="text-slate-600">Daftar isi manual, margin bergeser terus? Kami melayani <strong>Jasa Merapikan Daftar Isi dan Margin Skripsi</strong> agar 100% sesuai panduan kampus.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mt-1">
+                                <i class="fa-solid fa-xmark text-red-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-800">Bingung Mulai dari Mana</h3>
+                                <p class="text-slate-600">Judul ditolak terus, stuck di Bab 1, atau bingung cara olah data penelitian.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mt-1">
+                                <i class="fa-solid fa-xmark text-red-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-800">Deadline Makin Dekat & Dosen Susah Ditemui</h3>
+                                <p class="text-slate-600">Butuh progress cepat tapi bimbingan selalu terhambat.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mt-8 p-5 bg-brand-50 border-l-4 border-brand-500 rounded-r-lg">
+                        <p class="text-brand-900 font-medium">
+                            Tenang, kamu tidak sendirian. <strong>Pena Elit Akademika</strong> punya semua solusi praktis agar kamu bisa segera pakai toga!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-600 font-bold tracking-wider uppercase text-sm mb-2 block">Layanan Kami</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Solusi Lengkap Akademikmu</h2>
+                <div class="w-24 h-1 bg-brand-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1: Template Skripsi Custom -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-slate-100 flex flex-col h-full relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-accent-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Terlaris</div>
+                    <div class="w-14 h-14 bg-blue-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-file-word"></i>
+                    </div>
+                    <a href="jasa-format-template-skripsi.html" class="text-xl font-bold text-brand-700 hover:text-brand-900 mb-3 inline-block transition-colors">Template Skripsi Custom</a>
+                    <p class="text-slate-600 mb-6 flex-grow text-sm">
+                        Layanan <strong>Jasa Pembuatan Template Skripsi sesuai Pedoman Kampus</strong>! Heading, daftar isi otomatis, dan tabel presisi.
+                    </p>
+                    <a href="https://wa.me/628211541284?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20memesan%20Jasa%20Pembuatan%20Template%20Skripsi%20Custom%20sesuai%20pedoman%20kampus%20saya." target="_blank" class="w-full block text-center bg-brand-900 hover:bg-brand-800 text-white font-semibold py-2.5 rounded-lg transition-colors">
+                        Pesan Sekarang <i class="fa-solid fa-arrow-right ml-1 text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2: Konsultasi Skripsi -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-slate-100 flex flex-col h-full group">
+                    <div class="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <a href="jasa-skripsi-purwakarta.html" class="text-xl font-bold text-brand-700 hover:text-brand-900 mb-3 inline-block transition-colors">Jasa Konsultasi Skripsi</a>
+                    <p class="text-slate-600 mb-6 flex-grow text-sm">
+                        Bimbingan eksklusif dari penentuan judul, penyusunan Bab 1-5, hingga <strong>Bimbingan dan Olah Data Skripsi</strong>. Layanan Jasa Skripsi Purwakarta terpercaya sampai siap sidang.
+                    </p>
+                    <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20menggunakan%20Jasa%20Konsultasi%20Skripsi.%20Boleh%20minta%20info%20lebih%20lanjut%3F" target="_blank" class="w-full block text-center border-2 border-brand-900 text-brand-900 hover:bg-brand-50 font-semibold py-2.5 rounded-lg transition-colors">
+                        Tanya Admin <i class="fa-brands fa-whatsapp ml-1 text-lg align-middle"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3: Jurnal Publikasi -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-slate-100 flex flex-col h-full group">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <a href="jasa-publikasi-jurnal-sinta.html" class="text-xl font-bold text-brand-700 hover:text-brand-900 mb-3 inline-block transition-colors">Jasa Publikasi Jurnal Sinta</a>
+                    <p class="text-slate-600 mb-6 flex-grow text-sm">
+                        Konversi Skripsi ke format Jurnal Nasional/Internasional. <strong>Jasa Publikasi Jurnal Sinta</strong> dengan pengerjaan rapi, anti plagiasi, dan siap submit ke publisher.
+                    </p>
+                    <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20butuh%20bantuan%20untuk%20Jasa%20Pembuatan%20Jurnal.%20Boleh%20minta%20info%20harganya%3F" target="_blank" class="w-full block text-center border-2 border-brand-900 text-brand-900 hover:bg-brand-50 font-semibold py-2.5 rounded-lg transition-colors">
+                        Info Lanjut
+                    </a>
+                </div>
+
+                <!-- Service 4: Tugas Kuliah -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-slate-100 flex flex-col h-full group">
+                    <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-laptop-file"></i>
+                    </div>
+                    <a href="joki-tugas-kuliah.html" class="text-xl font-bold text-brand-700 hover:text-brand-900 mb-3 inline-block transition-colors">Joki Tugas Kuliah</a>
+                    <p class="text-slate-600 mb-6 flex-grow text-sm">
+                        Layanan <strong>Joki Tugas Makalah dan Presentasi</strong>. Membantu pengerjaan Esai, Review Jurnal, PPT, hingga Analisis Kasus dengan referensi kredibel.
+                    </p>
+                    <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20butuh%20Bantuan%20Tugas%20Kuliah.%20Bisa%20bantu%20kerjakan%20tugas%20saya%3F" target="_blank" class="w-full block text-center border-2 border-brand-900 text-brand-900 hover:bg-brand-50 font-semibold py-2.5 rounded-lg transition-colors">
+                        Joki Tugas
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="keunggulan" class="py-20 bg-brand-900 text-white relative overflow-hidden">
+        <!-- Abstract background shape -->
+        <div class="absolute opacity-10 top-0 left-0 w-full h-full" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Mengapa Memilih Pena Elit?</h2>
+                <p class="text-brand-100 max-w-2xl mx-auto">Kami mengedepankan kualitas, kejujuran, dan kepuasan klien untuk memastikan proses akademikmu berjalan lancar.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-brand-800 rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl text-accent-400 shadow-inner">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Pengerjaan Cepat</h3>
+                    <p class="text-brand-100 text-sm leading-relaxed">Sistem kerja efisien. Template langsung dikirim, dan layanan konsultasi menyesuaikan dengan deadline kamu.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-brand-800 rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl text-accent-400 shadow-inner">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Rahasia Terjamin 100%</h3>
+                    <p class="text-brand-100 text-sm leading-relaxed">Privasi dan identitas klien adalah prioritas utama kami. Data dijamin aman dan tidak akan disebarluaskan.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-brand-800 rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl text-accent-400 shadow-inner">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Harga Mahasiswa</h3>
+                    <p class="text-brand-100 text-sm leading-relaxed">Kualitas elit namun harga tetap bersahabat dengan kantong mahasiswa. Investasi terbaik untuk kelulusanmu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="coba-gratis" class="py-16 bg-brand-50 relative border-y border-brand-100 overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 border border-white relative overflow-hidden group">
+                <!-- Free Badge -->
+                <div class="absolute top-0 right-0 bg-red-500 text-white font-extrabold text-sm px-6 py-2 rounded-bl-2xl z-10 shadow-md tracking-wider">
+                    100% GRATIS
+                </div>
+                
+                <!-- Icon/Illustration -->
+                <div class="md:w-1/3 flex justify-center relative">
+                    <div class="absolute inset-0 bg-brand-100 rounded-full blur-2xl opacity-60 group-hover:bg-brand-200 transition-colors duration-500"></div>
+                    <div class="relative z-10 w-32 h-32 bg-gradient-to-br from-brand-600 to-brand-900 rounded-2xl flex items-center justify-center text-white text-6xl shadow-2xl transform -rotate-6 group-hover:rotate-0 transition-transform duration-500">
+                        <i class="fa-solid fa-file-word"></i>
+                    </div>
+                </div>
+                
+                <!-- Text Content -->
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Masih Ragu dengan Hasil Kami?</h2>
+                    <p class="text-slate-600 mb-6 text-lg">
+                        Kami paham kamu butuh bukti kerapian. Silakan download <strong class="text-brand-700">Contoh Template Skripsi Bab 1</strong> secara gratis untuk melihat standar kerja profesional kami:
+                    </p>
+                    
+                    <ul class="space-y-3 mb-8 text-left inline-block md:block bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-green-500 text-xl mt-0.5 flex-shrink-0"></i>
+                            <span class="text-slate-700 font-medium"><strong>Daftar Isi Otomatis</strong> (Tinggal klik Update Table, langsung rapi)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-green-500 text-xl mt-0.5"></i>
+                            <span class="text-slate-700 font-medium"><strong>Auto-Heading</strong> (Tingkat Bab dan Sub-Bab terstruktur rapi)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-green-500 text-xl mt-0.5"></i>
+                            <span class="text-slate-700 font-medium"><strong>Format Standar</strong> (Margin & Spasi sesuai panduan skripsi Kampus RI)</span>
+                        </li>
+                    </ul>
+                    
+                    <div>
+                        <a href="https://drive.google.com/drive/folders/1lTbI5W0_ZhTsk870vVwB_28P-0QMPKbW?usp=sharing" target="_blank" class="inline-flex items-center justify-center gap-3 bg-brand-900 hover:bg-brand-800 text-white text-lg font-bold py-3.5 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 w-full sm:w-auto">
+                            <i class="fa-brands fa-google-drive text-2xl"></i> Download via Google Drive
+                        </a>
+                        <p class="mt-3 text-xs text-slate-400">
+                            <i class="fa-solid fa-lock text-brand-400 mr-1"></i> Aman. Tidak perlu daftar atau login, klik langsung download.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-brand-50 to-blue-100 rounded-3xl p-8 md:p-12 text-center shadow-xl border border-brand-200">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-900 mb-4">Jangan Tunda Kelulusanmu!</h2>
+                <p class="text-slate-600 mb-8 text-lg">Ambil langkah sekarang. Dapatkan template skripsi otomatis atau diskusikan kebingunganmu dengan tim kami via WhatsApp atau Linktree.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <!-- Linktree Route -->
+                    <a href="https://linktr.ee/pena.elit" target="_blank" class="bg-brand-900 hover:bg-brand-800 text-white text-lg font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-link"></i> Akses Linktree Kami
+                    </a>
+                    <!-- Direct WA / Alternative Action -->
+                    <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20tertarik%20dengan%20layanan%20yang%20ditawarkan.%20Boleh%20ngobrol%20lebih%20lanjut%3F" target="_blank" class="bg-[#25D366] hover:bg-[#20b858] text-white text-lg font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Chat Admin Sekarang
+                    </a>
+                </div>
+                <div class="mt-6">
+                    <p class="text-sm text-slate-500 font-medium">Pesan Template Custom Langsung via <a href="https://wa.me/628211541284?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20memesan%20Jasa%20Pembuatan%20Template%20Skripsi%20Custom%20sesuai%20pedoman%20kampus%20saya." target="_blank" class="text-brand-600 underline hover:text-brand-800 font-bold">WhatsApp Admin</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand Col -->
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
                         <div class="w-8 h-8 bg-brand-600 text-white rounded-lg flex items-center justify-center font-bold text-xl">
                             <i class="fa-solid fa-pen-nib text-sm"></i>
                         </div>
@@ -117,40 +467,6 @@
             } else {
                 navbar.classList.remove('shadow-md');
                 navbar.classList.remove('bg-white/90');
-            }
-        });
-    </script>
-    <!-- Floating Actions -->
-    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end">
-        <!-- Back to Top -->
-        <button id="backToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="bg-slate-800/80 backdrop-blur-sm text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-brand-900 hover:shadow-lg transition-all duration-300 opacity-0 translate-y-4 pointer-events-none" aria-label="Kembali ke Atas">
-            <i class="fa-solid fa-chevron-up text-sm"></i>
-        </button>
-        <!-- WhatsApp -->
-        <a href="https://wa.me/6281770450775" target="_blank" class="bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-transform duration-300 group relative" aria-label="WhatsApp Kami">
-            <i class="fa-brands fa-whatsapp text-3xl"></i>
-            <span class="absolute right-16 bg-white text-slate-800 text-sm font-semibold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md whitespace-nowrap pointer-events-none border border-slate-100 scale-95 group-hover:scale-100 origin-right">
-                Konsultasi Gratis
-            </span>
-        </a>
-    </div>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
-        });
-
-        const backToTopBtn = document.getElementById('backToTopBtn');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
-                backToTopBtn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
-                backToTopBtn.classList.add('opacity-100', 'translate-y-0');
-            } else {
-                backToTopBtn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
-                backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
             }
         });
     </script>
