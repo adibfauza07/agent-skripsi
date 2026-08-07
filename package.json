@@ -1,0 +1,23 @@
+{
+  "name": "agent-skripsi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adibfauza07/agent-skripsi.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/adibfauza07/agent-skripsi/issues"
+  },
+  "homepage": "https://github.com/adibfauza07/agent-skripsi#readme",
+  "devDependencies": {
+    "sharp-cli": "^5.2.0",
+    "tailwindcss": "^4.3.3"
+  }
+}
