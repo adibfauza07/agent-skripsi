@@ -397,7 +397,7 @@
             </div>
             
             <!-- Newsletter CTA -->
-            <div class="mt-20 bg-brand-900 rounded-3xl p-6 sm:p-10 md:p-16 text-center relative overflow-hidden shadow-2xl" data-aos="fade-up">
+            <div class="mt-24 mb-8 bg-brand-900 rounded-3xl p-6 sm:p-10 md:p-16 text-center relative overflow-hidden shadow-2xl" data-aos="fade-up">
                 <div class="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 rounded-full bg-brand-600 opacity-50 blur-3xl"></div>
                 <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-blue-500 opacity-50 blur-3xl"></div>
                 
@@ -410,15 +410,6 @@
                 </div>
             </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Call to Action Internal Link -->
-    <section class="py-12 bg-brand-900 text-white border-t border-brand-800">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-2xl font-bold mb-4">Butuh Bantuan Langsung?</h2>
-            <p class="mb-6 text-brand-100">Tim Jasa Skripsi Purwakarta dari Pena Elit Akademika siap membantu memecahkan kebuntuan skripsimu.</p>
-            <a href="https://wa.me/6281770450775" target="_blank" class="bg-white text-brand-900 hover:bg-brand-50 font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:-translate-y-1 inline-block">Konsultasi Gratis Sekarang</a>
         </div>
     </section>
 
@@ -545,6 +536,35 @@
             } else {
                 backToTopBtn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
                 backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+            }
+        });
+    </script>
+
+    <script>
+        // Pagination for mobile blog
+        document.addEventListener('DOMContentLoaded', function() {
+            const isMobile = window.innerWidth < 768;
+            if (isMobile) {
+                const grid = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2');
+                if (grid) {
+                    const articles = Array.from(grid.children).filter(child => child.tagName.toLowerCase() === 'article');
+                    if (articles.length > 3) {
+                        for (let i = 3; i < articles.length; i++) {
+                            articles[i].style.display = 'none';
+                        }
+                        const btnContainer = document.createElement('div');
+                        btnContainer.className = 'text-center mt-6 col-span-full';
+                        btnContainer.innerHTML = '<button id="loadMoreBtn" class="px-6 py-3 bg-white text-brand-700 font-bold rounded-full border border-slate-200 shadow-sm hover:bg-brand-50 transition-colors w-full">Tampilkan Lebih Banyak ▾</button>';
+                        grid.appendChild(btnContainer);
+                        
+                        document.getElementById('loadMoreBtn').addEventListener('click', function() {
+                            for (let i = 3; i < articles.length; i++) {
+                                articles[i].style.display = 'flex';
+                            }
+                            this.parentElement.style.display = 'none';
+                        });
+                    }
+                }
             }
         });
     </script>
