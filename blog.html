@@ -125,23 +125,28 @@
             <!-- Blog Grid -->
             
             <!-- Categories Filter -->
-            <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12" data-aos="fade-up">
-                <a href="#" class="px-4 py-1.5 sm:px-5 sm:py-2 bg-brand-600 text-white rounded-full text-sm font-semibold shadow-md hover:bg-brand-700 transition-colors">Semua</a>
-                <a href="#" class="px-4 py-1.5 sm:px-5 sm:py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-600 rounded-full text-sm font-semibold border border-slate-200 shadow-sm transition-colors">Konsultasi Skripsi</a>
-                <a href="#" class="px-4 py-1.5 sm:px-5 sm:py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-600 rounded-full text-sm font-semibold border border-slate-200 shadow-sm transition-colors">Template Skripsi</a>
-                <a href="#" class="px-4 py-1.5 sm:px-5 sm:py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-600 rounded-full text-sm font-semibold border border-slate-200 shadow-sm transition-colors">Publikasi Jurnal</a>
-                <a href="#" class="px-4 py-1.5 sm:px-5 sm:py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-600 rounded-full text-sm font-semibold border border-slate-200 shadow-sm transition-colors">Tugas Kuliah</a>
+            <div class="flex overflow-x-auto pb-4 mb-12 gap-3 md:gap-4 md:flex-wrap md:justify-center snap-x" style="scrollbar-width: none; -ms-overflow-style: none;" data-aos="fade-up">
+<style>
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+</style>
+
+                <a href="#" class="hide-scrollbar whitespace-nowrap flex-shrink-0 snap-center px-5 py-2.5 bg-brand-600 text-white rounded-full text-sm font-semibold shadow-md hover:bg-brand-700 transition-colors">Semua</a>
+                <a href="#" class="hide-scrollbar whitespace-nowrap flex-shrink-0 snap-center px-5 py-2.5 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-600 rounded-full text-sm font-semibold border border-slate-200 shadow-sm transition-colors">Konsultasi Skripsi</a>
+                <a href="#" class="hide-scrollbar whitespace-nowrap flex-shrink-0 snap-center px-5 py-2.5 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-600 rounded-full text-sm font-semibold border border-slate-200 shadow-sm transition-colors">Template Skripsi</a>
+                <a href="#" class="hide-scrollbar whitespace-nowrap flex-shrink-0 snap-center px-5 py-2.5 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-600 rounded-full text-sm font-semibold border border-slate-200 shadow-sm transition-colors">Publikasi Jurnal</a>
+                <a href="#" class="hide-scrollbar whitespace-nowrap flex-shrink-0 snap-center px-5 py-2.5 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-600 rounded-full text-sm font-semibold border border-slate-200 shadow-sm transition-colors">Tugas Kuliah</a>
             </div>
 
             <!-- Featured Post -->
             <div class="mb-16" data-aos="fade-up">
                 <a href="cara-menulis-abstrak-skripsi.html" class="group block bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all border border-slate-100 overflow-hidden flex flex-col md:flex-row transform hover:-translate-y-1">
-                    <div class="w-full md:w-5/12 h-64 md:h-auto bg-cyan-100 relative overflow-hidden flex items-center justify-center">
-                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-5 transition-opacity"></div>
-                        <div class="text-cyan-500 text-8xl group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-solid fa-file-lines"></i>
-                        </div>
-                    </div>
+                    <div class="w-full md:w-5/12 h-64 md:h-auto bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center group-hover:shadow-inner">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+        <div class="absolute -top-24 -right-24 w-48 h-48 bg-brand-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+        <div class="text-white text-8xl group-hover:scale-110 group-hover:text-brand-300 transition-all duration-500 drop-shadow-2xl">
+            <i class="fa-solid fa-file-lines"></i>
+        </div>
+    </div>
                     <div class="w-full md:w-7/12 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
                         <div class="mb-4">
                             <span class="inline-block bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">Artikel</span>
@@ -163,12 +168,13 @@
             <!-- Blog Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100 overflow-hidden flex flex-col group cursor-pointer" onclick="window.location.href='tips-memilih-judul-skripsi.html'">
-                    <div class="h-48 bg-yellow-100 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-yellow-900 opacity-10 group-hover:opacity-0 transition-opacity"></div>
-                        <div class="w-full h-full flex items-center justify-center text-yellow-500 text-6xl group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-solid fa-lightbulb"></i>
-                        </div>
-                    </div>
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden group-hover:shadow-inner">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+        <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-yellow-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-6xl group-hover:scale-110 group-hover:text-yellow-300 transition-all duration-500 drop-shadow-xl">
+            <i class="fa-solid fa-lightbulb"></i>
+        </div>
+    </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-bold text-yellow-600 uppercase mb-2">Tips Skripsi</span>
                         <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-yellow-600 transition-colors">Tips Memilih Judul Skripsi yang Mudah di ACC Dosen</h2>
@@ -184,12 +190,13 @@
                     </div>
                 </article>
 <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100 overflow-hidden flex flex-col group cursor-pointer" onclick="window.location.href='cara-menggunakan-mendeley.html'">
-                    <div class="h-48 bg-lime-100 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-lime-900 opacity-10 group-hover:opacity-0 transition-opacity"></div>
-                        <div class="w-full h-full flex items-center justify-center text-lime-500 text-6xl group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-solid fa-book-bookmark"></i>
-                        </div>
-                    </div>
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden group-hover:shadow-inner">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+        <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-lime-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-6xl group-hover:scale-110 group-hover:text-lime-300 transition-all duration-500 drop-shadow-xl">
+            <i class="fa-solid fa-book-bookmark"></i>
+        </div>
+    </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-bold text-lime-600 uppercase mb-2">Tutorial</span>
                         <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-lime-600 transition-colors">Cara Menggunakan Mendeley untuk Daftar Pustaka Otomatis</h2>
@@ -205,12 +212,13 @@
                     </div>
                 </article>
 <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100 overflow-hidden flex flex-col group cursor-pointer" onclick="window.location.href='teknik-wawancara-kualitatif.html'">
-                    <div class="h-48 bg-orange-100 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-orange-900 opacity-10 group-hover:opacity-0 transition-opacity"></div>
-                        <div class="w-full h-full flex items-center justify-center text-orange-500 text-6xl group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-solid fa-microphone-lines"></i>
-                        </div>
-                    </div>
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden group-hover:shadow-inner">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+        <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-orange-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-6xl group-hover:scale-110 group-hover:text-orange-300 transition-all duration-500 drop-shadow-xl">
+            <i class="fa-solid fa-microphone-lines"></i>
+        </div>
+    </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-bold text-orange-600 uppercase mb-2">Metodologi</span>
                         <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-orange-600 transition-colors">Teknik Wawancara Mendalam untuk Penelitian Kualitatif</h2>
@@ -226,12 +234,13 @@
                     </div>
                 </article>
 <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100 overflow-hidden flex flex-col group cursor-pointer" onclick="window.location.href='cara-mencari-jurnal-internasional-gratis.html'">
-                    <div class="h-48 bg-teal-100 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-teal-900 opacity-10 group-hover:opacity-0 transition-opacity"></div>
-                        <div class="w-full h-full flex items-center justify-center text-teal-500 text-6xl group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-solid fa-globe"></i>
-                        </div>
-                    </div>
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden group-hover:shadow-inner">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+        <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-teal-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-6xl group-hover:scale-110 group-hover:text-teal-300 transition-all duration-500 drop-shadow-xl">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+    </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-bold text-teal-600 uppercase mb-2">Referensi Jurnal</span>
                         <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-teal-600 transition-colors">Cara Mencari Jurnal Internasional Gratis untuk Referensi Skripsi</h2>
@@ -247,12 +256,13 @@
                     </div>
                 </article>
 <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100 overflow-hidden flex flex-col group cursor-pointer" onclick="window.location.href='tips-menghadapi-sidang-skripsi.html'">
-                    <div class="h-48 bg-rose-100 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-rose-900 opacity-10 group-hover:opacity-0 transition-opacity"></div>
-                        <div class="w-full h-full flex items-center justify-center text-rose-500 text-6xl group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-solid fa-user-graduate"></i>
-                        </div>
-                    </div>
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden group-hover:shadow-inner">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+        <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-rose-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-6xl group-hover:scale-110 group-hover:text-rose-300 transition-all duration-500 drop-shadow-xl">
+            <i class="fa-solid fa-user-graduate"></i>
+        </div>
+    </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-bold text-rose-600 uppercase mb-2">Sidang Skripsi</span>
                         <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-rose-600 transition-colors">Tips Sukses Menghadapi Sidang Skripsi agar Lulus dengan Nilai A</h2>
@@ -268,12 +278,13 @@
                     </div>
                 </article>
 <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100 overflow-hidden flex flex-col group cursor-pointer" onclick="window.location.href='perbedaan-kualitatif-dan-kuantitatif.html'">
-                    <div class="h-48 bg-emerald-100 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-emerald-900 opacity-10 group-hover:opacity-0 transition-opacity"></div>
-                        <div class="w-full h-full flex items-center justify-center text-emerald-500 text-6xl group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-solid fa-chart-pie"></i>
-                        </div>
-                    </div>
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden group-hover:shadow-inner">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+        <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-emerald-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-6xl group-hover:scale-110 group-hover:text-emerald-300 transition-all duration-500 drop-shadow-xl">
+            <i class="fa-solid fa-chart-pie"></i>
+        </div>
+    </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-bold text-emerald-600 uppercase mb-2">Metodologi</span>
                         <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-emerald-600 transition-colors">Memahami Perbedaan Metode Penelitian Kualitatif dan Kuantitatif</h2>
@@ -289,12 +300,13 @@
                     </div>
                 </article>
 <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100 overflow-hidden flex flex-col group cursor-pointer" onclick="window.location.href='cara-mengatasi-plagiarisme-turnitin.html'">
-                    <div class="h-48 bg-indigo-100 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-indigo-900 opacity-10 group-hover:opacity-0 transition-opacity"></div>
-                        <div class="w-full h-full flex items-center justify-center text-indigo-500 text-6xl group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-solid fa-file-shield"></i>
-                        </div>
-                    </div>
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden group-hover:shadow-inner">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+        <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-indigo-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-6xl group-hover:scale-110 group-hover:text-indigo-300 transition-all duration-500 drop-shadow-xl">
+            <i class="fa-solid fa-file-shield"></i>
+        </div>
+    </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-bold text-indigo-600 uppercase mb-2">Tips Skripsi</span>
                         <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-indigo-600 transition-colors">Cara Lolos Uji Turnitin dan Tips Parafrase Skripsi yang Benar</h2>
@@ -310,12 +322,13 @@
                     </div>
                 </article>
 <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100 overflow-hidden flex flex-col group cursor-pointer" onclick="window.location.href='tips-lulus-skripsi-cepat.html'">
-                    <div class="h-48 bg-pink-100 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-pink-900 opacity-10 group-hover:opacity-0 transition-opacity"></div>
-                        <div class="w-full h-full flex items-center justify-center text-pink-500 text-6xl group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-                    </div>
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden group-hover:shadow-inner">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+        <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-pink-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-6xl group-hover:scale-110 group-hover:text-pink-300 transition-all duration-500 drop-shadow-xl">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+    </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-bold text-pink-600 uppercase mb-2">Tips Skripsi</span>
                         <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors">7 Tips Lulus Skripsi Cepat Tanpa Pusing Revisi</h2>
@@ -331,12 +344,13 @@
                     </div>
                 </article>
 <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100 overflow-hidden flex flex-col group cursor-pointer" onclick="window.location.href='cara-membuat-daftar-isi-otomatis-word.html'">
-                    <div class="h-48 bg-blue-100 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-blue-900 opacity-10 group-hover:opacity-0 transition-opacity"></div>
-                        <div class="w-full h-full flex items-center justify-center text-blue-500 text-6xl group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-regular fa-file-word"></i>
-                        </div>
-                    </div>
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden group-hover:shadow-inner">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+        <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-blue-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-6xl group-hover:scale-110 group-hover:text-blue-300 transition-all duration-500 drop-shadow-xl">
+            <i class="fa-regular fa-file-word"></i>
+        </div>
+    </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-bold text-blue-600 uppercase mb-2">Tutorial Word</span>
                         <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Cara Membuat Daftar Isi Otomatis di Word dengan Mudah</h2>
@@ -352,12 +366,13 @@
                     </div>
                 </article>
 <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100 overflow-hidden flex flex-col group cursor-pointer" onclick="window.location.href='panduan-publikasi-jurnal-sinta.html'">
-                    <div class="h-48 bg-purple-100 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-purple-900 opacity-10 group-hover:opacity-0 transition-opacity"></div>
-                        <div class="w-full h-full flex items-center justify-center text-purple-500 text-6xl group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-solid fa-book-open-reader"></i>
-                        </div>
-                    </div>
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden group-hover:shadow-inner">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+        <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-purple-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-6xl group-hover:scale-110 group-hover:text-purple-300 transition-all duration-500 drop-shadow-xl">
+            <i class="fa-solid fa-book-open-reader"></i>
+        </div>
+    </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-bold text-purple-600 uppercase mb-2">Jurnal & Sinta</span>
                         <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-purple-600 transition-colors">Panduan Lengkap Publikasi Jurnal Sinta untuk Pemula</h2>
@@ -373,12 +388,13 @@
                     </div>
                 </article>
 <article class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100 overflow-hidden flex flex-col group cursor-pointer" onclick="window.location.href='cara-mengerjakan-makalah-presentasi-cepat.html'">
-                    <div class="h-48 bg-amber-100 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-amber-900 opacity-10 group-hover:opacity-0 transition-opacity"></div>
-                        <div class="w-full h-full flex items-center justify-center text-amber-500 text-6xl group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-solid fa-person-chalkboard"></i>
-                        </div>
-                    </div>
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden group-hover:shadow-inner">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-30 group-hover:opacity-50 transition-opacity"></div>
+        <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-amber-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-6xl group-hover:scale-110 group-hover:text-amber-300 transition-all duration-500 drop-shadow-xl">
+            <i class="fa-solid fa-person-chalkboard"></i>
+        </div>
+    </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-bold text-amber-600 uppercase mb-2">Tips Tugas Kuliah</span>
                         <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-amber-600 transition-colors">Cara Mengerjakan Makalah dan Presentasi PPT dengan Cepat</h2>
@@ -397,7 +413,8 @@
             </div>
             
             <!-- Newsletter CTA -->
-            <div class="mt-32 md:mt-40 mb-16 bg-brand-900 rounded-3xl p-6 sm:p-10 md:p-16 text-center relative overflow-hidden shadow-2xl" data-aos="fade-up">
+            <div class="w-full h-16 md:h-24"></div>
+            <div class="mb-16 bg-brand-900 rounded-3xl p-6 sm:p-10 md:p-16 text-center relative overflow-hidden shadow-2xl" data-aos="fade-up">
                 <div class="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 rounded-full bg-brand-600 opacity-50 blur-3xl"></div>
                 <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-blue-500 opacity-50 blur-3xl"></div>
                 
