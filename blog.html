@@ -118,7 +118,19 @@
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="tentang.html" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Tentang</a>
-                    <a href="index.html#layanan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Layanan</a>
+                    <div class="relative group">
+                        <button class="text-slate-600 hover:text-brand-600 font-medium transition-colors flex items-center">
+                            Layanan <i class="fa-solid fa-chevron-down text-[10px] ml-1.5 transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        <div class="absolute left-0 mt-0 pt-6 w-60 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0 z-50">
+                            <div class="bg-white rounded-2xl shadow-xl ring-1 ring-black ring-opacity-5 p-2 border border-slate-100">
+                                <a href="jasa-skripsi-purwakarta.html" class="block px-4 py-3 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-xl transition-colors"><i class="fa-solid fa-graduation-cap w-5 text-brand-500 mr-2"></i>Konsultasi Skripsi</a>
+                                <a href="jasa-format-template-skripsi.html" class="block px-4 py-3 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-xl transition-colors"><i class="fa-solid fa-file-word w-5 text-blue-500 mr-2"></i>Template Skripsi</a>
+                                <a href="joki-tugas-kuliah.html" class="block px-4 py-3 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-xl transition-colors"><i class="fa-solid fa-laptop-file w-5 text-yellow-500 mr-2"></i>Joki Tugas Kuliah</a>
+                                <a href="jasa-publikasi-jurnal-sinta.html" class="block px-4 py-3 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-xl transition-colors"><i class="fa-solid fa-book-open-reader w-5 text-purple-500 mr-2"></i>Publikasi Jurnal Sinta</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="index.html#keunggulan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Keunggulan</a>
                     <a href="blog.html" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Blog</a>
                     <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20akademik%20yang%20tersedia." target="_blank" class="btn-lux rounded-full px-5 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
@@ -139,7 +151,15 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-lg absolute w-full">
             <div class="px-4 pt-2 pb-6 space-y-1">
                 <a href="tentang.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Tentang</a>
-                <a href="index.html#layanan" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Layanan Kami</a>
+                <div class="block border-b border-slate-50 pb-2">
+                    <span class="block px-3 py-3 rounded-md text-base font-bold text-slate-800"><i class="fa-solid fa-briefcase mr-2 text-brand-600"></i>Layanan Kami</span>
+                    <div class="pl-6 flex flex-col space-y-1 mb-2">
+                        <a href="jasa-skripsi-purwakarta.html" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-700 hover:bg-brand-50"><i class="fa-solid fa-graduation-cap w-5 text-brand-500 mr-2"></i>Konsultasi Skripsi</a>
+                        <a href="jasa-format-template-skripsi.html" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-700 hover:bg-brand-50"><i class="fa-solid fa-file-word w-5 text-blue-500 mr-2"></i>Template Skripsi</a>
+                        <a href="joki-tugas-kuliah.html" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-700 hover:bg-brand-50"><i class="fa-solid fa-laptop-file w-5 text-yellow-500 mr-2"></i>Joki Tugas Kuliah</a>
+                        <a href="jasa-publikasi-jurnal-sinta.html" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-700 hover:bg-brand-50"><i class="fa-solid fa-book-open-reader w-5 text-purple-500 mr-2"></i>Publikasi Jurnal Sinta</a>
+                    </div>
+                </div>
                 <a href="index.html#keunggulan" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Keunggulan</a>
                 <a href="blog.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Blog</a>
                 <div class="mt-4 px-3">
@@ -719,6 +739,7 @@
     </script>
 </body>
 </html>
+
 
 
 
