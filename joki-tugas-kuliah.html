@@ -117,7 +117,20 @@
                 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html#layanan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Layanan</a>
+                    <a href="tentang.html" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Tentang</a>
+                    <div class="relative group">
+                        <button class="text-slate-600 hover:text-brand-600 font-medium transition-colors flex items-center">
+                            Layanan <i class="fa-solid fa-chevron-down text-[10px] ml-1.5 transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        <div class="absolute left-0 mt-0 pt-6 w-60 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0 z-50">
+                            <div class="bg-white rounded-2xl shadow-xl ring-1 ring-black ring-opacity-5 p-2 border border-slate-100">
+                                <a href="jasa-skripsi-purwakarta.html" class="block px-4 py-3 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-xl transition-colors"><i class="fa-solid fa-graduation-cap w-5 text-brand-500 mr-2"></i>Konsultasi Skripsi</a>
+                                <a href="jasa-format-template-skripsi.html" class="block px-4 py-3 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-xl transition-colors"><i class="fa-solid fa-file-word w-5 text-blue-500 mr-2"></i>Template Skripsi</a>
+                                <a href="joki-tugas-kuliah.html" class="block px-4 py-3 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-xl transition-colors"><i class="fa-solid fa-laptop-file w-5 text-yellow-500 mr-2"></i>Joki Tugas Kuliah</a>
+                                <a href="jasa-publikasi-jurnal-sinta.html" class="block px-4 py-3 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-xl transition-colors"><i class="fa-solid fa-book-open-reader w-5 text-purple-500 mr-2"></i>Publikasi Jurnal Sinta</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="index.html#keunggulan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Keunggulan</a>
                     <a href="blog.html" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Blog</a>
                     <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20akademik%20yang%20tersedia." target="_blank" class="btn-lux rounded-full px-5 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
@@ -137,7 +150,16 @@
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-lg absolute w-full">
             <div class="px-4 pt-2 pb-6 space-y-1">
-                <a href="index.html#layanan" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Layanan Kami</a>
+                <a href="tentang.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Tentang</a>
+                <div class="block border-b border-slate-50 pb-2">
+                    <span class="block px-3 py-3 rounded-md text-base font-bold text-slate-800"><i class="fa-solid fa-briefcase mr-2 text-brand-600"></i>Layanan Kami</span>
+                    <div class="pl-6 flex flex-col space-y-1 mb-2">
+                        <a href="jasa-skripsi-purwakarta.html" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-700 hover:bg-brand-50"><i class="fa-solid fa-graduation-cap w-5 text-brand-500 mr-2"></i>Konsultasi Skripsi</a>
+                        <a href="jasa-format-template-skripsi.html" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-700 hover:bg-brand-50"><i class="fa-solid fa-file-word w-5 text-blue-500 mr-2"></i>Template Skripsi</a>
+                        <a href="joki-tugas-kuliah.html" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-700 hover:bg-brand-50"><i class="fa-solid fa-laptop-file w-5 text-yellow-500 mr-2"></i>Joki Tugas Kuliah</a>
+                        <a href="jasa-publikasi-jurnal-sinta.html" class="block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-700 hover:bg-brand-50"><i class="fa-solid fa-book-open-reader w-5 text-purple-500 mr-2"></i>Publikasi Jurnal Sinta</a>
+                    </div>
+                </div>
                 <a href="index.html#keunggulan" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Keunggulan</a>
                 <a href="blog.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Blog</a>
                 <div class="mt-4 px-3">
@@ -148,27 +170,27 @@
             </div>
         </div>
     </nav>
-<main class="bg-slate-50 overflow-hidden">
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-amber-50 overflow-hidden">
-        <div class="absolute -right-20 top-0 w-96 h-96 bg-amber-300 rounded-full blur-[100px] opacity-40 animate-pulse"></div>
-        <div class="absolute -left-20 bottom-0 w-96 h-96 bg-brand-200 rounded-full blur-[100px] opacity-30"></div>
+<main class="bg-white overflow-hidden text-slate-800">
+    <!-- Hero Section (Light Theme) -->
+    <section class="relative pt-40 pb-20 lg:pt-56 lg:pb-32 bg-gradient-to-b from-amber-50 via-white to-white overflow-hidden">
+        <div class="absolute -right-20 top-0 w-[500px] h-[500px] bg-amber-200/40 rounded-full blur-[100px] -z-10 animate-pulse"></div>
+        <div class="absolute -left-20 bottom-0 w-[500px] h-[500px] bg-yellow-200/40 rounded-full blur-[100px] -z-10"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-4xl mx-auto" data-aos="zoom-in">
-                <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-200/50 border border-amber-300 text-amber-800 font-bold text-xs sm:text-sm tracking-widest uppercase mb-6 shadow-sm backdrop-blur-sm">
-                    <i class="fa-solid fa-bolt text-amber-600"></i> Layanan Mahasiswa Aktif
+                <span class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white border border-amber-200 text-amber-700 font-bold text-xs sm:text-sm tracking-widest uppercase mb-6 lg:mb-8 shadow-sm">
+                    <i class="fa-solid fa-bolt text-amber-500"></i> Layanan Mahasiswa Aktif
                 </span>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold text-slate-900 leading-[1.15] mb-6 text-balance">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold text-slate-900 leading-tight mb-6 lg:mb-8 text-balance">
                     Deadline Tugas Kuliah Mepet? <br/>
                     <span class="text-amber-600 drop-shadow-sm">Serahkan Ahlinya, Kamu Tinggal Kumpulkan!</span>
                 </h1>
-                <p class="text-base sm:text-lg lg:text-xl text-slate-700 mb-10 leading-relaxed max-w-2xl mx-auto text-balance">
-                    Sibuk kerja part-time atau numpuk kegiatan organisasi? Tim Pena Elit siap *back up* pengerjaan Makalah, Review Jurnal, Resume, hingga PPT Presentasi kamu dengan standar nilai A.
+                <p class="text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto text-balance">
+                    Beban tugas menumpuk? Sibuk kerja <em>part-time</em> atau kegiatan organisasi? Tim Pena Elit siap <em>back up</em> pengerjaan Makalah, Review Jurnal, Resume, hingga PPT Presentasi kamu dengan standar nilai A.
                 </p>
-                <div class="flex justify-center">
-                    <a href="https://wa.me/6281770450775" class="bg-slate-900 text-white rounded-full px-8 py-4 font-bold text-base sm:text-lg shadow-xl shadow-slate-900/20 flex items-center justify-center transition-transform hover:-translate-y-1 hover:bg-brand-900 w-full sm:w-auto">
-                        <i class="fa-solid fa-paper-plane text-xl mr-2"></i> Order Tugas Sekarang (Fast Respon)
+                <div class="flex flex-col sm:flex-row justify-center gap-5">
+                    <a href="https://wa.me/6281770450775" class="bg-slate-900 text-white rounded-full px-10 py-4 font-bold text-lg shadow-xl shadow-slate-900/20 flex items-center justify-center transition-transform hover:-translate-y-1 hover:bg-slate-800 w-full sm:w-auto">
+                        <i class="fa-solid fa-paper-plane text-2xl mr-3 text-amber-400"></i> Order Tugas Sekarang (Fast Respon)
                     </a>
                 </div>
             </div>
@@ -176,45 +198,45 @@
     </section>
 
     <!-- Kategori Tugas -->
-    <section class="py-20 lg:py-28 bg-white relative z-20 -mt-8 rounded-t-[2.5rem] lg:rounded-t-[4rem] shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.05)]">
+    <section class="py-24 lg:py-32 bg-slate-50 border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 text-balance">Apa Saja Yang Bisa Kami Bantu Kerjakan?</h2>
-                <p class="text-lg text-slate-600">Bukan hasil copy-paste Wikipedia. Semua diketik manual berdasarkan referensi jurnal ilmiah terkini.</p>
+            <div class="text-center mb-16 lg:mb-20" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6 text-balance">Apa Saja Yang Bisa Kami Bantu Kerjakan?</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Kami tidak pernah menggunakan cara <em>copy-paste</em> Wikipedia atau hasil *generate* AI sembarangan. Semua diketik manual berdasarkan referensi jurnal ilmiah terkini.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="group border border-slate-100 rounded-3xl p-8 hover:border-amber-400 hover:shadow-2xl transition-all bg-white relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-bl-[100px] -z-10 group-hover:scale-125 transition-transform duration-500"></div>
-                    <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-6 text-3xl shadow-sm"><i class="fa-solid fa-book-open"></i></div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">Makalah Akademik Lengkap</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Penulisan makalah komprehensif mulai dari Bab Pendahuluan (Latar Belakang), Pembahasan, hingga Kesimpulan & Saran.</p>
-                    <div class="space-y-2 text-sm font-medium text-slate-700">
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Standar PUEBI baku</div>
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Lengkap dengan Daftar Pustaka</div>
+                <div class="bg-white p-8 lg:p-10 rounded-3xl border border-slate-200 hover:shadow-2xl hover:border-amber-400 transition-all group relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-amber-50 rounded-bl-full -z-10 group-hover:scale-125 transition-transform duration-700"></div>
+                    <div class="w-16 h-16 bg-white border border-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-8 text-3xl shadow-sm"><i class="fa-solid fa-book-open"></i></div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Makalah Akademik Lengkap</h3>
+                    <p class="text-slate-600 text-base leading-relaxed mb-6">Penulisan makalah komprehensif mulai dari Bab Pendahuluan (Latar Belakang), Pembahasan, hingga Kesimpulan & Saran.</p>
+                    <div class="space-y-3 text-base font-bold text-slate-700">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Standar PUEBI baku</div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Lengkap dengan Daftar Pustaka</div>
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="group border border-slate-100 rounded-3xl p-8 hover:border-amber-400 hover:shadow-2xl transition-all bg-white relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-bl-[100px] -z-10 group-hover:scale-125 transition-transform duration-500"></div>
-                    <div class="w-16 h-16 bg-brand-100 text-brand-600 rounded-2xl flex items-center justify-center mb-6 text-3xl shadow-sm"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">Review & Resume Jurnal</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Merangkum atau membedah kritis jurnal bahasa Indonesia/Inggris (format tabel atau paragraf analitis) sesuai template dosen.</p>
-                    <div class="space-y-2 text-sm font-medium text-slate-700">
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Pemahaman substansi tajam</div>
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Free translate Inggris-Indo</div>
+                <div class="bg-white p-8 lg:p-10 rounded-3xl border border-slate-200 hover:shadow-2xl hover:border-brand-400 transition-all group relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-brand-50 rounded-bl-full -z-10 group-hover:scale-125 transition-transform duration-700"></div>
+                    <div class="w-16 h-16 bg-white border border-brand-100 text-brand-600 rounded-2xl flex items-center justify-center mb-8 text-3xl shadow-sm"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Review & Resume Jurnal</h3>
+                    <p class="text-slate-600 text-base leading-relaxed mb-6">Merangkum atau membedah kritis jurnal bahasa Indonesia/Inggris (format tabel atau paragraf analitis) sesuai template tugas dosen.</p>
+                    <div class="space-y-3 text-base font-bold text-slate-700">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Pemahaman substansi tajam</div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Free translate Inggris-Indo</div>
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="group border border-slate-100 rounded-3xl p-8 hover:border-amber-400 hover:shadow-2xl transition-all bg-white relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-bl-[100px] -z-10 group-hover:scale-125 transition-transform duration-500"></div>
-                    <div class="w-16 h-16 bg-red-100 text-red-500 rounded-2xl flex items-center justify-center mb-6 text-3xl shadow-sm"><i class="fa-solid fa-person-chalkboard"></i></div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">Desain PPT Presentasi</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Pembuatan materi PowerPoint dari materi Word Anda. Desain elegan, kekinian, informatif (tidak *text-heavy*), dan siap tampil.</p>
-                    <div class="space-y-2 text-sm font-medium text-slate-700">
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Desain Visual Premium</div>
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Mapping poin-poin krusial</div>
+                <div class="bg-white p-8 lg:p-10 rounded-3xl border border-slate-200 hover:shadow-2xl hover:border-red-400 transition-all group relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-red-50 rounded-bl-full -z-10 group-hover:scale-125 transition-transform duration-700"></div>
+                    <div class="w-16 h-16 bg-white border border-red-100 text-red-500 rounded-2xl flex items-center justify-center mb-8 text-3xl shadow-sm"><i class="fa-solid fa-person-chalkboard"></i></div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Desain PPT Presentasi</h3>
+                    <p class="text-slate-600 text-base leading-relaxed mb-6">Pembuatan materi PowerPoint presentasi tugas dari file Word Anda. Desain sangat elegan, kekinian, informatif, dan siap tampil.</p>
+                    <div class="space-y-3 text-base font-bold text-slate-700">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Desain Visual Premium</div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Highlight Poin Penting</div>
                     </div>
                 </div>
             </div>
@@ -222,35 +244,35 @@
     </section>
 
     <!-- FAQ Layanan Tugas -->
-    <section class="py-20 lg:py-28 bg-slate-50 border-t border-slate-200">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-10 text-center text-slate-900" data-aos="fade-up">FAQ Seputar Joki Tugas</h2>
-            <div class="space-y-4">
-                <div class="bg-white rounded-2xl p-6 lg:p-8 border border-slate-200 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-lg lg:text-xl font-bold text-slate-800 mb-2 flex items-center gap-3">
-                        <i class="fa-solid fa-clock text-amber-500"></i> Apakah melayani *Deadline* Besok Pagi (Layanan Semalam)?
+    <section class="py-24 lg:py-32 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-12 lg:mb-16 text-center text-slate-900" data-aos="fade-up">FAQ - Pertanyaan Seputar Joki Tugas</h2>
+            <div class="space-y-6">
+                <div class="bg-slate-50 rounded-3xl p-8 lg:p-10 border border-slate-200 hover:shadow-xl hover:border-amber-400 transition-all cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-4 flex items-center gap-4">
+                        <i class="fa-solid fa-clock text-amber-500 text-3xl"></i> Apakah melayani *Deadline* Besok Pagi (Layanan Semalam)?
                     </h3>
-                    <p class="text-slate-600 leading-relaxed text-sm lg:text-base pl-9">Sangat bisa! Selama slot eksekutor kami *available* malam itu, kami siap mengeksekusi "Proyek Roro Jonggrang" Anda agar bisa dikumpulkan besok paginya.</p>
+                    <p class="text-slate-600 leading-relaxed text-base lg:text-lg pl-12">Sangat bisa! Selama slot eksekutor kami *available* pada malam itu, kami siap mengeksekusi "Proyek Roro Jonggrang" Anda semalaman suntuk agar bisa langsung dikumpulkan kepada dosen keesokan paginya.</p>
                 </div>
-                <div class="bg-white rounded-2xl p-6 lg:p-8 border border-slate-200 shadow-sm" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-lg lg:text-xl font-bold text-slate-800 mb-2 flex items-center gap-3">
-                        <i class="fa-solid fa-user-secret text-amber-500"></i> Apakah ketahuan dosen kalau saya pakai joki?
+                <div class="bg-slate-50 rounded-3xl p-8 lg:p-10 border border-slate-200 hover:shadow-xl hover:border-amber-400 transition-all cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-4 flex items-center gap-4">
+                        <i class="fa-solid fa-user-secret text-amber-500 text-3xl"></i> Apakah ketahuan dosen kalau saya pakai jasa joki?
                     </h3>
-                    <p class="text-slate-600 leading-relaxed text-sm lg:text-base pl-9">100% Aman! Hasil karya kami adalah *original handwriting* (diketik murni), bebas Turnitin, dan tata bahasa disesuaikan agar natural seperti tulisan mahasiswa (tidak kaku seperti mesin atau AI).</p>
+                    <p class="text-slate-600 leading-relaxed text-base lg:text-lg pl-12">100% Aman! Hasil karya kami adalah *original handwriting* (diketik murni), bebas dari deteksi Turnitin plagiasi, dan tata bahasa disesuaikan agar natural seperti gaya tulisan mahasiswa (bukan bahasa kaku mesin/AI).</p>
                 </div>
-                <div class="bg-white rounded-2xl p-6 lg:p-8 border border-slate-200 shadow-sm" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-lg lg:text-xl font-bold text-slate-800 mb-2 flex items-center gap-3">
-                        <i class="fa-solid fa-graduation-cap text-amber-500"></i> Tugas jurusan apa saja yang dilayani?
+                <div class="bg-slate-50 rounded-3xl p-8 lg:p-10 border border-slate-200 hover:shadow-xl hover:border-amber-400 transition-all cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-4 flex items-center gap-4">
+                        <i class="fa-solid fa-graduation-cap text-amber-500 text-3xl"></i> Tugas jurusan atau mata kuliah apa saja yang dilayani?
                     </h3>
-                    <p class="text-slate-600 leading-relaxed text-sm lg:text-base pl-9">Kami unggul di rumpun Ilmu Sosial (Hukum, Pendidikan, Manajemen, Komunikasi, Administrasi) dan rumpun Kesehatan. Untuk Teknik/MIPA *hardcode* silakan konsultasikan detailnya dengan admin.</p>
+                    <p class="text-slate-600 leading-relaxed text-base lg:text-lg pl-12">Kami unggul menangani tugas dari rumpun Ilmu Sosial (Hukum, Pendidikan, Manajemen, Komunikasi, Administrasi) dan rumpun Kesehatan. Untuk Teknik/MIPA *hardcode* (seperti tugas hitungan murni atau *coding* spesifik) silakan konsultasikan *file* nya dengan admin terlebih dahulu.</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Floating Mobile WA Button (Visible only on small screens) -->
-    <a href="https://wa.me/6281770450775" class="md:hidden fixed bottom-6 right-6 z-50 bg-green-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-[0_10px_25px_rgba(34,197,94,0.5)] animate-bounce border-2 border-white">
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    <!-- Floating Mobile WA Button -->
+    <a href="https://wa.me/6281770450775" class="md:hidden fixed bottom-6 right-6 z-50 bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-[0_10px_25px_rgba(34,197,94,0.5)] animate-bounce border-[3px] border-white">
+        <i class="fa-brands fa-whatsapp text-4xl"></i>
     </a>
 </main><footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
