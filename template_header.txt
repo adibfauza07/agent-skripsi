@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Skripsi Purwakarta & Joki Tugas Kuliah Terbaik - Pena Elit Akademika</title>
+    <meta name="description" content="Pusat Jasa Skripsi Purwakarta & Joki Tugas Kuliah terpercaya. Melayani Konsultasi Skripsi, Template Skripsi, Jasa Perbaikan Format Skripsi Word, Olah Data, hingga Publikasi Jurnal Sinta.">
+    <meta name="keywords" content="Jasa Skripsi Purwakarta, Joki Tugas Kuliah Purwakarta, Jasa Skripsi, Joki Tugas, Konsultasi Skripsi, Template Skripsi, Jasa Perbaikan Format Skripsi Word, Jasa Pembuatan Template Skripsi sesuai Pedoman Kampus, Jasa Publikasi Jurnal Sinta, Joki Tugas Makalah dan Presentasi, Jasa Merapikan Daftar Isi dan Margin Skripsi, Bimbingan dan Olah Data Skripsi">
+    
+    <!-- Open Graph / WhatsApp Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://penaelit.com/">
+    <meta property="og:title" content="Jasa Skripsi Purwakarta & Joki Tugas Kuliah Terbaik - Pena Elit">
+    <meta property="og:description" content="Pusat Jasa Skripsi Purwakarta & Joki Tugas Kuliah terpercaya. Melayani Konsultasi Skripsi, Template Skripsi, Jasa Perbaikan Format Skripsi Word, Olah Data, hingga Publikasi Jurnal Sinta.">
+    <meta property="og:image" content="https://penaelit.com/og-images.png">
+    
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Pena Elit Akademika",
+      "image": "https://penaelit.com/logo.png",
+      "@id": "",
+      "url": "https://penaelit.com/",
+      "telephone": "+6281770450775",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Purwakarta",
+        "addressRegion": "Jawa Barat",
+        "addressCountry": "ID"
+      },
+      "description": "Layanan Jasa Skripsi Purwakarta, Joki Tugas Kuliah, Konsultasi Skripsi, Template Skripsi, Jasa Publikasi Jurnal Sinta, dan Bimbingan Olah Data.",
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": -6.5386,
+          "longitude": 107.4433
+        },
+        "geoRadius": "50000"
+      }
+    }
+    </script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="https://penaelit.com/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS (Compiled) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Canonical Tag for SEO -->
+    <link rel="canonical" href="https://penaelit.com/">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Apakah kerahasiaan data saya terjamin?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sangat terjamin! Kami memegang teguh privasi klien. Semua data penelitian, identitas, dan naskah skripsi tidak akan pernah dipublikasikan atau dibagikan kepada pihak ketiga."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Berapa lama proses pengerjaan skripsi atau tugas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Waktu pengerjaan bervariasi tergantung tingkat kesulitan. Edit format 1-2 hari, olah data atau bab penuh 1-2 minggu. Kami juga melayani pengerjaan kilat."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Apakah ada garansi revisi jika disalahkan dosen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tentu saja. Kami memberikan garansi revisi gratis sampai tuntas sesuai dengan kesepakatan awal. Kami berkomitmen mengawal klien hingga acc dosen."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Bagaimana sistem pembayarannya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pembayaran dapat dilakukan secara bertahap (termin). DP di awal sebagai tanda jadi, dan pelunasan dilakukan setelah draft selesai."
+        }
+      }]
+    }
+    </script>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta property="og:site_name" content="Pena Elit Akademika">
+    <meta name="author" content="Pena Elit">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 glass transition-all duration-300 shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="https://penaelit.com/" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <div class="w-8 h-8 bg-brand-900 text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-md">
+                        <i class="fa-solid fa-pen-nib text-sm"></i>
+                    </div>
+                    <span class="font-bold text-xl text-brand-900 tracking-tight">Pena Elit</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html#layanan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Layanan</a>
+                    <a href="index.html#keunggulan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Keunggulan</a>
+                    <a href="blog.html" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Blog</a>
+                    <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20akademik%20yang%20tersedia." target="_blank" class="btn-lux rounded-full px-5 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Hubungi Kami
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-brand-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-lg absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html#layanan" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Layanan Kami</a>
+                <a href="index.html#keunggulan" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Keunggulan</a>
+                <a href="blog.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Blog</a>
+                <div class="mt-4 px-3">
+                    <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20akademik%20yang%20tersedia." target="_blank" class="block w-full text-center bg-brand-900 text-white px-4 py-3 rounded-lg font-medium shadow-md">
+                        Hubungi Admin
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
