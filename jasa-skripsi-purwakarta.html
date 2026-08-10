@@ -171,11 +171,9 @@
         </div>
     </nav>
 <main class="bg-white overflow-hidden text-slate-800">
-    <!-- Hero Section (Light Theme to ensure Navbar contrast) -->
     <section class="relative pt-40 pb-20 lg:pt-56 lg:pb-32 bg-gradient-to-b from-brand-50 via-white to-white overflow-hidden">
         <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-200/40 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/3"></div>
         <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-yellow-200/30 rounded-full blur-[100px] -z-10 -translate-x-1/3 translate-y-1/3"></div>
-        
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
                 <div class="lg:col-span-7 text-center lg:text-left" data-aos="fade-right">
@@ -210,7 +208,6 @@
         </div>
     </section>
 
-    <!-- Pain Points -->
     <section class="py-24 bg-slate-50 border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20" data-aos="fade-up">
@@ -237,7 +234,6 @@
         </div>
     </section>
 
-    <!-- Fitur ZigZag -->
     <section id="fitur" class="py-24 lg:py-32 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20 lg:mb-28" data-aos="fade-up">
@@ -246,7 +242,6 @@
             </div>
             
             <div class="space-y-24 lg:space-y-40">
-                <!-- Feature 1 -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     <div class="order-2 lg:order-1" data-aos="fade-right">
                         <div class="w-16 h-16 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mb-8 border border-brand-100"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></div>
@@ -263,7 +258,6 @@
                     </div>
                 </div>
 
-                <!-- Feature 2 -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     <div class="bg-slate-50 p-6 sm:p-8 rounded-[3rem] shadow-xl border border-slate-200 relative group" data-aos="fade-right">
                         <div class="absolute -inset-2 bg-gradient-to-r from-yellow-300 to-orange-300 rounded-[3.5rem] blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
@@ -283,7 +277,6 @@
         </div>
     </section>
 
-    <!-- Testimonial (Social Proof) -->
     <section class="py-24 bg-brand-900 text-white relative overflow-hidden">
         <div class="absolute right-0 top-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-[100px] translate-x-1/3 -translate-y-1/3"></div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="zoom-in">
@@ -301,32 +294,44 @@
         </div>
     </section>
 
-    <!-- FAQ Layanan Skripsi -->
-    <section class="py-24 lg:py-32 bg-slate-50 border-t border-slate-200">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- NEW ACCORDION FAQ -->
+    <section class="py-24 lg:py-32 bg-slate-50 border-t border-slate-200" id="faq">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 lg:mb-20" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">FAQ - Pertanyaan Umum Jasa Skripsi</h2>
+                <span class="text-brand-600 font-bold tracking-wider uppercase text-sm mb-3 block">Tanya Jawab</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">Pertanyaan Seputar Jasa Skripsi</h2>
                 <p class="text-lg text-slate-600">Keraguan yang paling sering ditanyakan calon klien kami sebelum memesan layanan.</p>
             </div>
             
-            <div class="space-y-6">
-                <div class="bg-white rounded-3xl p-8 lg:p-10 border border-slate-200 hover:shadow-xl hover:border-brand-300 transition-all cursor-pointer group" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-4 group-hover:text-brand-600 transition-colors flex items-center gap-4">
-                        <i class="fa-regular fa-circle-question text-brand-500 text-3xl"></i> Berapa lama waktu pengerjaan 1 Bab penuh?
-                    </h3>
-                    <p class="text-slate-600 leading-relaxed text-base lg:text-lg pl-12">Normalnya pengerjaan 1 bab memakan waktu 1-2 minggu. Namun, kami memiliki opsi <strong>Layanan Prioritas (Kilat)</strong> yang bisa menyelesaikan naskah dalam hitungan hari saja, khusus untuk Anda yang dikejar *deadline* pendaftaran sidang.</p>
+            <div class="space-y-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow">
+                    <button class="w-full px-6 lg:px-8 py-5 text-left flex justify-between items-center focus:outline-none group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+                        <span class="font-bold text-slate-800 text-lg group-hover:text-brand-600 transition-colors pr-4">Berapa lama waktu pengerjaan 1 Bab penuh?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-600 transition-transform duration-300 text-xl shrink-0"></i>
+                    </button>
+                    <div class="px-6 lg:px-8 pb-6 hidden text-slate-600 text-base leading-relaxed border-t border-slate-50 pt-4">
+                        Normalnya pengerjaan 1 bab memakan waktu 1-2 minggu. Namun, kami memiliki opsi <strong>Layanan Prioritas (Kilat)</strong> yang bisa menyelesaikan naskah dalam hitungan hari saja, khusus untuk Anda yang dikejar <em>deadline</em> pendaftaran sidang.
+                    </div>
                 </div>
-                <div class="bg-white rounded-3xl p-8 lg:p-10 border border-slate-200 hover:shadow-xl hover:border-brand-300 transition-all cursor-pointer group" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-4 group-hover:text-brand-600 transition-colors flex items-center gap-4">
-                        <i class="fa-regular fa-circle-question text-brand-500 text-3xl"></i> Bagaimana kalau dosen meminta revisi? Apakah bayar lagi?
-                    </h3>
-                    <p class="text-slate-600 leading-relaxed text-base lg:text-lg pl-12">Kami memberikan <strong>Garansi Revisi GRATIS</strong> sampai naskah ACC! Selama revisi dari dosen tidak merombak total rumusan masalah atau judul awal yang telah disepakati, tim kami akan segera mengerjakannya tanpa memungut biaya tambahan sepeser pun.</p>
+                
+                <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow">
+                    <button class="w-full px-6 lg:px-8 py-5 text-left flex justify-between items-center focus:outline-none group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+                        <span class="font-bold text-slate-800 text-lg group-hover:text-brand-600 transition-colors pr-4">Bagaimana kalau dosen meminta revisi? Apakah bayar lagi?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-600 transition-transform duration-300 text-xl shrink-0"></i>
+                    </button>
+                    <div class="px-6 lg:px-8 pb-6 hidden text-slate-600 text-base leading-relaxed border-t border-slate-50 pt-4">
+                        Kami memberikan <strong>Garansi Revisi GRATIS</strong> sampai naskah ACC! Selama revisi dari dosen tidak merombak total rumusan masalah atau judul awal yang telah disepakati, tim kami akan segera mengerjakannya tanpa memungut biaya tambahan sepeser pun.
+                    </div>
                 </div>
-                <div class="bg-white rounded-3xl p-8 lg:p-10 border border-slate-200 hover:shadow-xl hover:border-brand-300 transition-all cursor-pointer group" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-4 group-hover:text-brand-600 transition-colors flex items-center gap-4">
-                        <i class="fa-regular fa-circle-question text-brand-500 text-3xl"></i> Apakah privasi, identitas, dan kampus saya dirahasiakan?
-                    </h3>
-                    <p class="text-slate-600 leading-relaxed text-base lg:text-lg pl-12">Sangat dirahasiakan. Kami menjunjung tinggi etika dan menandatangani <em>Non-Disclosure Agreement</em> (NDA). Seluruh data mentah, instrumen penelitian, judul, hingga naskah akhir klien tidak akan pernah dipublikasikan di portofolio kami. Kerahasiaan Anda dijamin 100% selamanya.</p>
+                
+                <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow">
+                    <button class="w-full px-6 lg:px-8 py-5 text-left flex justify-between items-center focus:outline-none group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+                        <span class="font-bold text-slate-800 text-lg group-hover:text-brand-600 transition-colors pr-4">Apakah privasi, identitas, dan kampus saya dirahasiakan?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-600 transition-transform duration-300 text-xl shrink-0"></i>
+                    </button>
+                    <div class="px-6 lg:px-8 pb-6 hidden text-slate-600 text-base leading-relaxed border-t border-slate-50 pt-4">
+                        Sangat dirahasiakan. Kami menjunjung tinggi etika dan menandatangani <em>Non-Disclosure Agreement</em> (NDA). Seluruh data mentah, instrumen penelitian, judul, hingga naskah akhir klien tidak akan pernah dipublikasikan di portofolio kami. Kerahasiaan Anda dijamin 100% selamanya.
+                    </div>
                 </div>
             </div>
         </div>
@@ -345,7 +350,6 @@
         </div>
     </section>
 
-    <!-- Floating Mobile WA Button (Visible only on small screens) -->
     <a href="https://wa.me/6281770450775" class="md:hidden fixed bottom-6 right-6 z-50 bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-[0_10px_25px_rgba(34,197,94,0.5)] animate-bounce border-[3px] border-white">
         <i class="fa-brands fa-whatsapp text-4xl"></i>
     </a>

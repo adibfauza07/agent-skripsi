@@ -171,7 +171,6 @@
         </div>
     </nav>
 <main class="bg-white overflow-hidden text-slate-800">
-    <!-- Hero Section (Light Theme) -->
     <section class="relative pt-40 pb-20 lg:pt-56 lg:pb-32 bg-gradient-to-b from-amber-50 via-white to-white overflow-hidden">
         <div class="absolute -right-20 top-0 w-[500px] h-[500px] bg-amber-200/40 rounded-full blur-[100px] -z-10 animate-pulse"></div>
         <div class="absolute -left-20 bottom-0 w-[500px] h-[500px] bg-yellow-200/40 rounded-full blur-[100px] -z-10"></div>
@@ -197,16 +196,14 @@
         </div>
     </section>
 
-    <!-- Kategori Tugas -->
     <section class="py-24 lg:py-32 bg-slate-50 border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 lg:mb-20" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6 text-balance">Apa Saja Yang Bisa Kami Bantu Kerjakan?</h2>
-                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Kami tidak pernah menggunakan cara <em>copy-paste</em> Wikipedia atau hasil *generate* AI sembarangan. Semua diketik manual berdasarkan referensi jurnal ilmiah terkini.</p>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Kami tidak pernah menggunakan cara <em>copy-paste</em> Wikipedia atau hasil AI sembarangan. Semua diketik manual berdasarkan referensi jurnal ilmiah terkini.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
                 <div class="bg-white p-8 lg:p-10 rounded-3xl border border-slate-200 hover:shadow-2xl hover:border-amber-400 transition-all group relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
                     <div class="absolute top-0 right-0 w-40 h-40 bg-amber-50 rounded-bl-full -z-10 group-hover:scale-125 transition-transform duration-700"></div>
                     <div class="w-16 h-16 bg-white border border-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-8 text-3xl shadow-sm"><i class="fa-solid fa-book-open"></i></div>
@@ -217,7 +214,6 @@
                         <div class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Lengkap dengan Daftar Pustaka</div>
                     </div>
                 </div>
-                <!-- Card 2 -->
                 <div class="bg-white p-8 lg:p-10 rounded-3xl border border-slate-200 hover:shadow-2xl hover:border-brand-400 transition-all group relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
                     <div class="absolute top-0 right-0 w-40 h-40 bg-brand-50 rounded-bl-full -z-10 group-hover:scale-125 transition-transform duration-700"></div>
                     <div class="w-16 h-16 bg-white border border-brand-100 text-brand-600 rounded-2xl flex items-center justify-center mb-8 text-3xl shadow-sm"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
@@ -228,7 +224,6 @@
                         <div class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Free translate Inggris-Indo</div>
                     </div>
                 </div>
-                <!-- Card 3 -->
                 <div class="bg-white p-8 lg:p-10 rounded-3xl border border-slate-200 hover:shadow-2xl hover:border-red-400 transition-all group relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
                     <div class="absolute top-0 right-0 w-40 h-40 bg-red-50 rounded-bl-full -z-10 group-hover:scale-125 transition-transform duration-700"></div>
                     <div class="w-16 h-16 bg-white border border-red-100 text-red-500 rounded-2xl flex items-center justify-center mb-8 text-3xl shadow-sm"><i class="fa-solid fa-person-chalkboard"></i></div>
@@ -243,34 +238,49 @@
         </div>
     </section>
 
-    <!-- FAQ Layanan Tugas -->
-    <section class="py-24 lg:py-32 bg-white">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-12 lg:mb-16 text-center text-slate-900" data-aos="fade-up">FAQ - Pertanyaan Seputar Joki Tugas</h2>
-            <div class="space-y-6">
-                <div class="bg-slate-50 rounded-3xl p-8 lg:p-10 border border-slate-200 hover:shadow-xl hover:border-amber-400 transition-all cursor-pointer" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-4 flex items-center gap-4">
-                        <i class="fa-solid fa-clock text-amber-500 text-3xl"></i> Apakah melayani *Deadline* Besok Pagi (Layanan Semalam)?
-                    </h3>
-                    <p class="text-slate-600 leading-relaxed text-base lg:text-lg pl-12">Sangat bisa! Selama slot eksekutor kami *available* pada malam itu, kami siap mengeksekusi "Proyek Roro Jonggrang" Anda semalaman suntuk agar bisa langsung dikumpulkan kepada dosen keesokan paginya.</p>
+    <!-- NEW ACCORDION FAQ -->
+    <section class="py-24 lg:py-32 bg-white" id="faq">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 lg:mb-20" data-aos="fade-up">
+                <span class="text-amber-600 font-bold tracking-wider uppercase text-sm mb-3 block">Tanya Jawab</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">Pertanyaan Seputar Joki Tugas</h2>
+                <p class="text-lg text-slate-600">Keraguan yang paling sering ditanyakan calon klien kami sebelum memesan layanan.</p>
+            </div>
+            
+            <div class="space-y-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 shadow-sm hover:shadow-md transition-shadow">
+                    <button class="w-full px-6 lg:px-8 py-5 text-left flex justify-between items-center focus:outline-none group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+                        <span class="font-bold text-slate-800 text-lg group-hover:text-amber-600 transition-colors pr-4">Apakah melayani <em>Deadline</em> Besok Pagi (Layanan Semalam)?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-600 transition-transform duration-300 text-xl shrink-0"></i>
+                    </button>
+                    <div class="px-6 lg:px-8 pb-6 hidden text-slate-600 text-base leading-relaxed border-t border-slate-200 pt-4 bg-white">
+                        Sangat bisa! Selama slot eksekutor kami *available* pada malam itu, kami siap mengeksekusi "Proyek Roro Jonggrang" Anda semalaman suntuk agar bisa langsung dikumpulkan kepada dosen keesokan paginya.
+                    </div>
                 </div>
-                <div class="bg-slate-50 rounded-3xl p-8 lg:p-10 border border-slate-200 hover:shadow-xl hover:border-amber-400 transition-all cursor-pointer" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-4 flex items-center gap-4">
-                        <i class="fa-solid fa-user-secret text-amber-500 text-3xl"></i> Apakah ketahuan dosen kalau saya pakai jasa joki?
-                    </h3>
-                    <p class="text-slate-600 leading-relaxed text-base lg:text-lg pl-12">100% Aman! Hasil karya kami adalah *original handwriting* (diketik murni), bebas dari deteksi Turnitin plagiasi, dan tata bahasa disesuaikan agar natural seperti gaya tulisan mahasiswa (bukan bahasa kaku mesin/AI).</p>
+                
+                <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 shadow-sm hover:shadow-md transition-shadow">
+                    <button class="w-full px-6 lg:px-8 py-5 text-left flex justify-between items-center focus:outline-none group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+                        <span class="font-bold text-slate-800 text-lg group-hover:text-amber-600 transition-colors pr-4">Apakah ketahuan dosen kalau saya pakai jasa joki?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-600 transition-transform duration-300 text-xl shrink-0"></i>
+                    </button>
+                    <div class="px-6 lg:px-8 pb-6 hidden text-slate-600 text-base leading-relaxed border-t border-slate-200 pt-4 bg-white">
+                        100% Aman! Hasil karya kami adalah <em>original handwriting</em> (diketik murni), bebas dari deteksi Turnitin plagiasi, dan tata bahasa disesuaikan agar natural seperti gaya tulisan mahasiswa (bukan bahasa kaku mesin/AI).
+                    </div>
                 </div>
-                <div class="bg-slate-50 rounded-3xl p-8 lg:p-10 border border-slate-200 hover:shadow-xl hover:border-amber-400 transition-all cursor-pointer" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-4 flex items-center gap-4">
-                        <i class="fa-solid fa-graduation-cap text-amber-500 text-3xl"></i> Tugas jurusan atau mata kuliah apa saja yang dilayani?
-                    </h3>
-                    <p class="text-slate-600 leading-relaxed text-base lg:text-lg pl-12">Kami unggul menangani tugas dari rumpun Ilmu Sosial (Hukum, Pendidikan, Manajemen, Komunikasi, Administrasi) dan rumpun Kesehatan. Untuk Teknik/MIPA *hardcode* (seperti tugas hitungan murni atau *coding* spesifik) silakan konsultasikan *file* nya dengan admin terlebih dahulu.</p>
+                
+                <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 shadow-sm hover:shadow-md transition-shadow">
+                    <button class="w-full px-6 lg:px-8 py-5 text-left flex justify-between items-center focus:outline-none group" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('i').classList.toggle('rotate-180')">
+                        <span class="font-bold text-slate-800 text-lg group-hover:text-amber-600 transition-colors pr-4">Tugas jurusan atau mata kuliah apa saja yang dilayani?</span>
+                        <i class="fa-solid fa-chevron-down text-amber-600 transition-transform duration-300 text-xl shrink-0"></i>
+                    </button>
+                    <div class="px-6 lg:px-8 pb-6 hidden text-slate-600 text-base leading-relaxed border-t border-slate-200 pt-4 bg-white">
+                        Kami unggul menangani tugas dari rumpun Ilmu Sosial (Hukum, Pendidikan, Manajemen, Komunikasi, Administrasi) dan rumpun Kesehatan. Untuk Teknik/MIPA (seperti tugas hitungan murni atau <em>coding</em>) silakan konsultasikan *file* nya dengan admin terlebih dahulu.
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Floating Mobile WA Button -->
     <a href="https://wa.me/6281770450775" class="md:hidden fixed bottom-6 right-6 z-50 bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-[0_10px_25px_rgba(34,197,94,0.5)] animate-bounce border-[3px] border-white">
         <i class="fa-brands fa-whatsapp text-4xl"></i>
     </a>
