@@ -74,17 +74,24 @@
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        
+        /* Category Button Active State */
+        .category-btn.active {
+            background-color: #102a43; /* brand-900 */
+            color: #ffffff;
+            border-color: #102a43;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-600 selection:text-white font-sans overflow-x-hidden">
 
-    <!-- Navbar Disamakan Dengan Halaman Lain -->
+    <!-- Navbar Sesuai Website Utama -->
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300 shadow-sm border-b border-slate-100" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
-                <a href="https://penaelit.com/" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-                    <div class="w-8 h-8 bg-brand-900 text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-md">
+                <a href="https://penaelit.com/" class="flex-shrink-0 flex items-center gap-2 cursor-pointer group">
+                    <div class="w-8 h-8 bg-brand-900 text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-md group-hover:bg-brand-800 transition-colors">
                         <i class="fa-solid fa-pen-nib text-sm"></i>
                     </div>
                     <span class="font-bold text-xl text-brand-900 tracking-tight">Pena Elit</span>
@@ -107,8 +114,8 @@
                         </div>
                     </div>
                     <a href="index.html#keunggulan" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Keunggulan</a>
-                    <a href="blog.html" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Blog</a>
-                    <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20akademik%20yang%20tersedia." target="_blank" class="bg-brand-900 text-white px-5 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                    <a href="blog.html" class="text-brand-700 font-bold border-b-2 border-brand-700 transition-colors pb-1">Blog</a>
+                    <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20akademik%20yang%20tersedia." target="_blank" class="bg-brand-900 text-white px-5 py-2 rounded-full font-semibold transition-all shadow-md hover:shadow-lg hover:bg-brand-800 transform hover:-translate-y-0.5">
                         Hubungi Kami
                     </a>
                 </div>
@@ -123,7 +130,7 @@
         </div>
 
         <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-lg absolute w-full left-0">
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-xl absolute w-full left-0 origin-top transition-all">
             <div class="px-4 pt-2 pb-6 space-y-1">
                 <a href="tentang.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Tentang</a>
                 <div class="block border-b border-slate-50 pb-2">
@@ -136,10 +143,10 @@
                     </div>
                 </div>
                 <a href="index.html#keunggulan" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Keunggulan</a>
-                <a href="blog.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-slate-50 border-b border-slate-50">Blog</a>
+                <a href="blog.html" class="block px-3 py-3 rounded-md text-base font-bold text-brand-700 bg-brand-50 border-b border-slate-50">Blog</a>
                 <div class="mt-4 px-3">
-                    <a href="https://wa.me/6281770450775?text=Halo%20Admin%20Pena%20Elit%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20akademik%20yang%20tersedia." target="_blank" class="block w-full text-center bg-brand-900 text-white px-4 py-3 rounded-lg font-medium shadow-md">
-                        Hubungi Admin
+                    <a href="https://wa.me/6281770450775" target="_blank" class="block w-full text-center bg-[#25D366] text-white px-4 py-3 rounded-xl font-bold shadow-md">
+                        <i class="fa-brands fa-whatsapp text-lg mr-1"></i> Hubungi Admin
                     </a>
                 </div>
             </div>
@@ -182,12 +189,13 @@
                 </div>
 
                 <!-- Categories Filter -->
-                <div class="flex overflow-x-auto pb-4 gap-3 md:gap-4 justify-start md:justify-center snap-x hide-scrollbar" data-aos="fade-up" data-aos-delay="100">
-                    <button class="whitespace-nowrap flex-shrink-0 snap-center px-6 py-2 bg-brand-900 text-white rounded-full text-sm font-bold shadow-md hover:bg-brand-800 transition-all">Semua Artikel</button>
-                    <button class="whitespace-nowrap flex-shrink-0 snap-center px-6 py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-700 rounded-full text-sm font-medium border border-slate-200 shadow-sm transition-all">Penulisan Bab 1-5</button>
-                    <button class="whitespace-nowrap flex-shrink-0 snap-center px-6 py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-700 rounded-full text-sm font-medium border border-slate-200 shadow-sm transition-all">Olah Data & SPSS</button>
-                    <button class="whitespace-nowrap flex-shrink-0 snap-center px-6 py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-700 rounded-full text-sm font-medium border border-slate-200 shadow-sm transition-all">Format & Anti Plagiasi</button>
-                    <button class="whitespace-nowrap flex-shrink-0 snap-center px-6 py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-700 rounded-full text-sm font-medium border border-slate-200 shadow-sm transition-all">Sidang & Sempro</button>
+                <div id="categoryFilters" class="flex overflow-x-auto pb-4 gap-3 md:gap-4 justify-start md:justify-center snap-x hide-scrollbar" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Added data-filter attribute to each button -->
+                    <button class="category-btn active whitespace-nowrap flex-shrink-0 snap-center px-6 py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-700 rounded-full text-sm font-medium border border-slate-200 shadow-sm transition-all" data-filter="all">Semua Artikel</button>
+                    <button class="category-btn whitespace-nowrap flex-shrink-0 snap-center px-6 py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-700 rounded-full text-sm font-medium border border-slate-200 shadow-sm transition-all" data-filter="penulisan">Penulisan Bab 1-5</button>
+                    <button class="category-btn whitespace-nowrap flex-shrink-0 snap-center px-6 py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-700 rounded-full text-sm font-medium border border-slate-200 shadow-sm transition-all" data-filter="olah-data">Olah Data & SPSS</button>
+                    <button class="category-btn whitespace-nowrap flex-shrink-0 snap-center px-6 py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-700 rounded-full text-sm font-medium border border-slate-200 shadow-sm transition-all" data-filter="format">Format & Anti Plagiasi</button>
+                    <button class="category-btn whitespace-nowrap flex-shrink-0 snap-center px-6 py-2 bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-700 rounded-full text-sm font-medium border border-slate-200 shadow-sm transition-all" data-filter="sidang">Sidang & Sempro</button>
                 </div>
             </div>
         </section>
@@ -197,7 +205,8 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 <!-- Featured Post (Highlight) -->
-                <div class="mb-12" data-aos="fade-up">
+                <!-- Added data-category attribute -->
+                <div class="mb-12 blog-item" data-category="penulisan" data-aos="fade-up">
                     <a href="cara-menulis-abstrak-skripsi.html" class="group block bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col md:flex-row transform hover:-translate-y-1">
                         <!-- Thumbnail Illustration -->
                         <div class="w-full md:w-5/12 h-56 md:h-auto bg-gradient-to-br from-brand-800 to-brand-900 relative overflow-hidden flex items-center justify-center group-hover:shadow-inner">
@@ -211,7 +220,7 @@
                         <!-- Content -->
                         <div class="w-full md:w-7/12 p-6 md:p-10 flex flex-col justify-center">
                             <div class="flex items-center gap-3 mb-4">
-                                <span class="bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Artikel Sorotan</span>
+                                <span class="bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Penulisan Bab 1-5</span>
                                 <span class="text-sm text-slate-500 font-medium"><i class="fa-regular fa-calendar mr-1"></i> 8 Agustus 2026</span>
                             </div>
                             <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-4 group-hover:text-brand-600 transition-colors leading-snug">
@@ -231,7 +240,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blogGrid">
                     
                     <!-- Article 1 -->
-                    <article class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col group transform hover:-translate-y-1" data-aos="fade-up">
+                    <!-- Added data-category and removed aos attributes from individual grid items to prevent animation conflict during filtering -->
+                    <article class="blog-item bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="info">
                         <a href="harga-jasa-pembuatan-skripsi-terpercaya.html" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
                                 <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
@@ -253,7 +263,7 @@
                     </article>
 
                     <!-- Article 2 -->
-                    <article class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col group transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+                    <article class="blog-item bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="olah-data">
                         <a href="cara-mengolah-data-spss-skripsi-kuantitatif.html" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
                                 <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
@@ -275,7 +285,7 @@
                     </article>
 
                     <!-- Article 3 -->
-                    <article class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col group transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+                    <article class="blog-item bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="sidang">
                         <a href="pertanyaan-sidang-proposal-skripsi-sempro.html" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
                                 <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
@@ -297,7 +307,7 @@
                     </article>
 
                     <!-- Article 4 -->
-                    <article class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col group transform hover:-translate-y-1" data-aos="fade-up">
+                    <article class="blog-item bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="info">
                         <a href="ciri-jasa-skripsi-penipu.html" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
                                 <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
@@ -319,7 +329,7 @@
                     </article>
 
                     <!-- Article 5 -->
-                    <article class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col group transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+                    <article class="blog-item bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="penulisan">
                         <a href="cara-membuat-latar-belakang-bab1.html" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
                                 <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
@@ -341,7 +351,7 @@
                     </article>
 
                     <!-- Article 6 -->
-                    <article class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col group transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+                    <article class="blog-item bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="format">
                         <a href="rekomendasi-website-parafrase.html" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
                                 <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
@@ -362,8 +372,9 @@
                         </a>
                     </article>
                     
-                    <!-- Hidden Articles (For Load More) -->
-                    <article class="blog-hidden hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1">
+                    <!-- Hidden Articles (For Load More Simulation) -->
+                    <!-- We give them class 'hidden-initially' to control load more logic -->
+                    <article class="blog-item hidden-initially hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="format">
                         <a href="#" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
                                 <i class="fa-solid fa-file-word text-white text-5xl group-hover:scale-110 transition-transform duration-500 z-10"></i>
@@ -380,7 +391,7 @@
                         </a>
                     </article>
 
-                    <article class="blog-hidden hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1">
+                    <article class="blog-item hidden-initially hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="info">
                         <a href="#" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
                                 <i class="fa-solid fa-book-open-reader text-white text-5xl group-hover:scale-110 transition-transform duration-500 z-10"></i>
@@ -392,6 +403,24 @@
                                 <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
                                     <span><i class="fa-regular fa-calendar mr-1"></i> 8 Ags 2026</span>
                                     <span><i class="fa-regular fa-clock mr-1"></i> 5 min baca</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <!-- Additional Hidden Article -->
+                    <article class="blog-item hidden-initially hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="penulisan">
+                        <a href="#" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-solid fa-pen-fancy text-white text-5xl group-hover:scale-110 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-brand-600 uppercase mb-2">Penulisan Bab 1-5</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Cara Mengerjakan Bab 4 (Hasil & Pembahasan) Agar Tidak Dicoret</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Bab 4 adalah inti dari skripsi. Temukan cara mendeskripsikan tabel statistik menjadi narasi yang mudah dipahami.</p>
+                                <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
+                                    <span><i class="fa-regular fa-calendar mr-1"></i> 5 Ags 2026</span>
+                                    <span><i class="fa-regular fa-clock mr-1"></i> 6 min baca</span>
                                 </div>
                             </div>
                         </a>
@@ -484,20 +513,16 @@
         </div>
     </footer>
 
-    <!-- Floating Actions (WhatsApp & Back to top) -->
+    <!-- Floating Actions -->
     <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end">
-        <!-- Back to Top -->
         <button id="backToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="bg-slate-800/80 backdrop-blur-sm text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-brand-600 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none" aria-label="Kembali ke Atas">
             <i class="fa-solid fa-chevron-up text-sm"></i>
         </button>
-        
-        <!-- WhatsApp -->
         <a href="https://wa.me/6281770450775" target="_blank" class="bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl hover:scale-110 transition-transform duration-300 group relative" aria-label="WhatsApp Kami">
             <i class="fa-brands fa-whatsapp text-3xl"></i>
             <span class="absolute right-16 bg-white text-slate-800 text-sm font-semibold px-4 py-2 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md whitespace-nowrap pointer-events-none border border-slate-100 scale-95 group-hover:scale-100 origin-right">
                 Konsultasi Skripsi
             </span>
-            <!-- Notification dot -->
             <span class="absolute top-0 right-0 flex h-4 w-4">
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                 <span class="relative inline-flex rounded-full h-4 w-4 bg-red-500 border-2 border-white"></span>
@@ -552,25 +577,84 @@
             }
         });
 
-        // Load More Logic
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
-        const loadMoreContainer = document.getElementById('loadMoreContainer');
-        const hiddenArticles = document.querySelectorAll('.blog-hidden');
+        // --- BLOG FILTERING & LOAD MORE LOGIC --- //
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.category-btn');
+            const allArticles = document.querySelectorAll('.blog-item'); // Semua artikel (termasuk yang highlight)
+            const gridArticles = document.querySelectorAll('#blogGrid .blog-item'); // Hanya artikel di grid
+            const loadMoreContainer = document.getElementById('loadMoreContainer');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            
+            // Konfigurasi berapa banyak artikel tambahan yang di-load per klik
+            const itemsPerLoad = 3; 
 
-        if (loadMoreBtn && hiddenArticles.length > 0) {
-            loadMoreBtn.addEventListener('click', function() {
-                // Tampilkan artikel yang disembunyikan
-                hiddenArticles.forEach(article => {
-                    article.classList.remove('hidden');
-                    article.classList.add('flex'); // kembalikan display flex bawaan tailwind
+            // 1. FILTERING CATEGORY
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Reset active state di tombol
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    // Reset semua hidden state dari fitur 'Load More'
+                    // Jika user mem-filter, kita tampilkan semua artikel yang cocok (tidak di-hide oleh load more lagi)
+                    // Atau, bisa juga logika filter di-mix dengan load more. 
+                    // Di sini kita pilih: saat filter aktif, tampilkan SEMUA artikel yang sesuai kategori.
+                    
+                    if (loadMoreContainer) {
+                        loadMoreContainer.style.display = 'none'; // Sembunyikan tombol load more saat di-filter
+                    }
+
+                    allArticles.forEach(article => {
+                        // Sembunyikan semua dulu
+                        article.classList.add('hidden');
+                        article.classList.remove('flex'); // remove tailwind flex class
+
+                        // Cek kategori
+                        if (filterValue === 'all') {
+                            // Jika 'Semua', tampilkan semua (tapi kembalikan fungsi load more awal jika dibutuhkan)
+                            // Untuk simplifikasi: saat klik 'Semua', tampilkan semuanya.
+                            article.classList.remove('hidden');
+                            article.classList.add('flex');
+                        } else {
+                            if (article.getAttribute('data-category') === filterValue) {
+                                article.classList.remove('hidden');
+                                article.classList.add('flex');
+                            }
+                        }
+                    });
                 });
-                
-                // Sembunyikan tombol setelah diklik
-                loadMoreContainer.style.display = 'none';
             });
-        } else if(hiddenArticles.length === 0 && loadMoreContainer) {
-            loadMoreContainer.style.display = 'none'; // Sembunyikan tombol jika tidak ada artikel ekstra
-        }
+
+            // 2. LOAD MORE LOGIC (Hanya berlaku di awal sebelum difilter, atau di tab "Semua")
+            // Awal load: pastikan artikel ber-class 'hidden-initially' tidak tampil.
+            // Saat diklik, ambil `itemsPerLoad` artikel yang masih hidden, lalu tampilkan.
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', () => {
+                    // Cari artikel di dalam GRID saja yang masih punya class hidden-initially DAN hidden
+                    let hiddenElements = Array.from(gridArticles).filter(el => el.classList.contains('hidden-initially') && el.classList.contains('hidden'));
+                    
+                    // Ambil beberapa elemen sesuai itemsPerLoad
+                    for (let i = 0; i < itemsPerLoad; i++) {
+                        if (hiddenElements[i]) {
+                            hiddenElements[i].classList.remove('hidden');
+                            hiddenElements[i].classList.add('flex');
+                            hiddenElements[i].classList.remove('hidden-initially'); // tandai sudah di-load
+                        }
+                    }
+
+                    // Cek sisa yang belum di-load
+                    hiddenElements = Array.from(gridArticles).filter(el => el.classList.contains('hidden-initially') && el.classList.contains('hidden'));
+                    
+                    // Jika habis, hilangkan tombol
+                    if (hiddenElements.length === 0) {
+                        loadMoreContainer.style.display = 'none';
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>
+```eof
