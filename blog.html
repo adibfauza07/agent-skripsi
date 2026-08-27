@@ -82,7 +82,7 @@
             border-color: #102a43;
         }
 
-        /* Menyembunyikan elemen sebelum JS berjalan agar tidak flicker */
+        /* JS Hide utility for pagination */
         .blog-item.js-hidden {
             display: none !important;
         }
@@ -94,6 +94,7 @@
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300 shadow-sm border-b border-slate-100" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
                 <a href="https://penaelit.com/" class="flex-shrink-0 flex items-center gap-2 cursor-pointer group">
                     <div class="w-8 h-8 bg-brand-900 text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-md group-hover:bg-brand-800 transition-colors">
                         <i class="fa-solid fa-pen-nib text-sm"></i>
@@ -101,6 +102,7 @@
                     <span class="font-bold text-xl text-brand-900 tracking-tight">Pena Elit</span>
                 </a>
                 
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="tentang.html" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Tentang</a>
                     <div class="relative group">
@@ -123,6 +125,7 @@
                     </a>
                 </div>
 
+                <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-slate-600 hover:text-brand-900 focus:outline-none p-2">
                         <i class="fa-solid fa-bars text-2xl"></i>
@@ -131,6 +134,7 @@
             </div>
         </div>
 
+        <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-xl absolute w-full left-0 origin-top transition-all">
             <div class="px-4 pt-2 pb-6 space-y-1">
                 <a href="tentang.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 border-b border-slate-50">Tentang</a>
@@ -157,9 +161,11 @@
     <main class="pt-16">
         <!-- Hero Blog Section -->
         <section class="relative pt-16 pb-12 lg:pt-24 lg:pb-16 overflow-hidden bg-white border-b border-slate-100">
+            <!-- Decorative Element -->
             <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-50 opacity-50 blur-3xl"></div>
             
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Breadcrumb -->
                 <nav class="flex text-sm text-slate-500 mb-6 font-medium" aria-label="Breadcrumb" data-aos="fade-right">
                     <ol class="inline-flex items-center space-x-1 md:space-x-3">
                         <li class="inline-flex items-center">
@@ -202,7 +208,7 @@
         <section class="py-16 bg-slate-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <!-- Featured Post (Highlight) - Bebas dari Load More -->
+                <!-- Featured Post (Highlight) -->
                 <div class="mb-12" data-aos="fade-up">
                     <a href="cara-menulis-abstrak-skripsi.html" class="group block bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col md:flex-row transform hover:-translate-y-1">
                         <div class="w-full md:w-5/12 h-56 md:h-auto bg-gradient-to-br from-brand-800 to-brand-900 relative overflow-hidden flex items-center justify-center group-hover:shadow-inner">
@@ -231,16 +237,304 @@
                 </div>
 
                 <!-- Regular Blog Grid -->
-                <!-- Seluruh artikel diberi class 'blog-item js-hidden' agar disembunyikan di awal sebelum JS menghitungnya -->
+                <!-- Seluruh artikel diberi class 'blog-item js-hidden' -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blogGrid">
                     
+                    <!-- Kumpulan Artikel Utama -->
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="info">
+                        <a href="harga-jasa-pembuatan-skripsi-terpercaya.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
+                                <div class="absolute -top-10 -left-10 w-32 h-32 bg-green-500 rounded-full mix-blend-screen filter blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                                <i class="fa-solid fa-money-bill-wave text-white text-5xl group-hover:scale-110 group-hover:text-green-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-green-600 uppercase tracking-wider mb-2">Info Layanan</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors leading-snug">Harga Jasa Pembuatan Skripsi Terpercaya 2026: Apakah Sepadan?</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm leading-relaxed line-clamp-3">
+                                    Berapa harga jasa pembuatan skripsi yang wajar? Panduan lengkap memilih konsultan akademik agar tidak tertipu harga murah namun hasil copas.
+                                </p>
+                                <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
+                                    <span><i class="fa-regular fa-calendar mr-1"></i> 24 Ags 2026</span>
+                                    <span><i class="fa-regular fa-clock mr-1"></i> 7 min baca</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="olah-data">
+                        <a href="cara-mengolah-data-spss-skripsi-kuantitatif.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
+                                <div class="absolute -bottom-10 right-10 w-32 h-32 bg-indigo-500 rounded-full mix-blend-screen filter blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                                <i class="fa-solid fa-chart-pie text-white text-5xl group-hover:scale-110 group-hover:text-indigo-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-2">Olah Data & SPSS</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors leading-snug">Cara Mengolah Data SPSS untuk Skripsi Kuantitatif (Pemula)</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm leading-relaxed line-clamp-3">
+                                    Tutorial lengkap langkah-langkah uji validitas, reliabilitas, hingga regresi linear menggunakan SPSS. Dilengkapi cara baca tabel output.
+                                </p>
+                                <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
+                                    <span><i class="fa-regular fa-calendar mr-1"></i> 24 Ags 2026</span>
+                                    <span><i class="fa-regular fa-clock mr-1"></i> 8 min baca</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="sidang">
+                        <a href="pertanyaan-sidang-proposal-skripsi-sempro.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
+                                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-yellow-500 rounded-full mix-blend-screen filter blur-2xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                                <i class="fa-solid fa-comments-dollar text-white text-5xl group-hover:scale-110 group-hover:text-yellow-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-yellow-600 uppercase tracking-wider mb-2">Sidang & Sempro</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors leading-snug">Bocoran Pertanyaan Sidang Proposal (Sempro) & Cara Jawab</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm leading-relaxed line-clamp-3">
+                                    Persiapkan mentalmu! Kenali daftar 10 pertanyaan yang paling sering ditanyakan dosen penguji saat Sempro dan strategi cerdas menjawabnya.
+                                </p>
+                                <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
+                                    <span><i class="fa-regular fa-calendar mr-1"></i> 24 Ags 2026</span>
+                                    <span><i class="fa-regular fa-clock mr-1"></i> 6 min baca</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="info">
+                        <a href="ciri-jasa-skripsi-penipu.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
+                                <div class="absolute top-10 right-10 w-32 h-32 bg-red-500 rounded-full mix-blend-screen filter blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                                <i class="fa-solid fa-user-secret text-white text-5xl group-hover:scale-110 group-hover:text-red-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-red-600 uppercase tracking-wider mb-2">Tips Mahasiswa</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors leading-snug">Awas Tipu! Ciri Jasa Joki Skripsi Abal-abal vs Profesional</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm leading-relaxed line-clamp-3">
+                                    Banyak mahasiswa merugi jutaan rupiah. Kenali red-flags akun Instagram penyedia jasa skripsi agar Anda tidak menjadi korban penipuan.
+                                </p>
+                                <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
+                                    <span><i class="fa-regular fa-calendar mr-1"></i> 24 Ags 2026</span>
+                                    <span><i class="fa-regular fa-clock mr-1"></i> 5 min baca</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="sidang">
+                        <a href="cara-menjawab-pertanyaan-dosen-penguji-sidang.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
+                                <div class="absolute bottom-10 right-10 w-32 h-32 bg-red-500 rounded-full mix-blend-screen filter blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                                <i class="fa-solid fa-microphone-lines text-white text-5xl group-hover:scale-110 group-hover:text-red-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-red-600 uppercase tracking-wider mb-2">Sidang Skripsi</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors leading-snug">Cara Cerdas Menjawab Pertanyaan Dosen Penguji Saat Kamu "Blank"</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm leading-relaxed line-clamp-3">
+                                    Blank saat ditanya dosen penguji di sidang skripsi? Jangan panik! Ini trik dan cara menjawab pertanyaan dosen penguji dengan cerdas.
+                                </p>
+                                <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
+                                    <span><i class="fa-regular fa-calendar mr-1"></i> 19 Ags 2026</span>
+                                    <span><i class="fa-regular fa-clock mr-1"></i> 5 min baca</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="penulisan">
+                        <a href="alasan-judul-skripsi-sering-ditolak.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
+                                <div class="absolute top-10 left-10 w-32 h-32 bg-orange-500 rounded-full mix-blend-screen filter blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                                <i class="fa-solid fa-file-circle-xmark text-white text-5xl group-hover:scale-110 group-hover:text-orange-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-orange-600 uppercase tracking-wider mb-2">Persiapan Skripsi</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors leading-snug">5 Alasan Utama Mengapa Judul Skripsi Kamu Selalu Ditolak Dosen</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm leading-relaxed line-clamp-3">
+                                    Sudah mengajukan banyak judul tapi selalu ditolak (dicoret) dosen pembimbing? Ketahui 5 alasan utamanya.
+                                </p>
+                                <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
+                                    <span><i class="fa-regular fa-calendar mr-1"></i> 19 Ags 2026</span>
+                                    <span><i class="fa-regular fa-clock mr-1"></i> 6 min baca</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="penulisan">
+                        <a href="cara-membuat-latar-belakang-bab1.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
+                                <div class="absolute bottom-10 left-10 w-32 h-32 bg-blue-500 rounded-full mix-blend-screen filter blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                                <i class="fa-solid fa-align-left text-white text-5xl group-hover:scale-110 group-hover:text-blue-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">Penulisan Bab 1-5</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors leading-snug">Rahasia Menulis Latar Belakang (Bab 1) Anti Coret Dosen</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm leading-relaxed line-clamp-3">
+                                    Kesulitan memaparkan fenomena masalah? Gunakan metode piramida terbalik (deduktif) dan jelaskan Research Gap agar judulmu valid.
+                                </p>
+                                <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
+                                    <span><i class="fa-regular fa-calendar mr-1"></i> 19 Ags 2026</span>
+                                    <span><i class="fa-regular fa-clock mr-1"></i> 6 min baca</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="sidang">
+                        <a href="ciri-ciri-skripsi-lolos-revisi-cepat.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-20"></div>
+                                <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-emerald-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
+                                <i class="fa-solid fa-spell-check text-white text-5xl group-hover:scale-110 group-hover:text-emerald-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2">Tips Kuliah</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors leading-snug">Bocoran Rahasia Dosen: Ciri-Ciri Skripsi yang Pasti Cepat Di-ACC Tanpa Banyak Revisi</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm leading-relaxed line-clamp-3">
+                                    Ingin skripsi cepat di-ACC tanpa banyak revisi? Ketahui ciri-ciri naskah skripsi berkualitas yang disukai dosen pembimbing.
+                                </p>
+                                <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
+                                    <span><i class="fa-regular fa-calendar mr-1"></i> 19 Ags 2026</span>
+                                    <span><i class="fa-regular fa-clock mr-1"></i> 5 min baca</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Tambahan Artikel Agar Menjadi Puluhan -->
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="sidang">
+                        <a href="cara-mengatasi-mental-block-skripsi.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-solid fa-brain text-white text-5xl group-hover:scale-110 group-hover:text-teal-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-teal-600 uppercase mb-2">Tips Kuliah</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Cara Ampuh Mengatasi Mental Block Saat Mengerjakan Skripsi</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Sering stuck dan kehilangan motivasi saat menyusun skripsi? Ketahui penyebab mental block dan cara mengatasinya agar skripsi cepat selesai.</p>
+                                <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>18 Ags 2026</span><span>5 min baca</span></div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="sidang">
+                        <a href="tips-membuat-powerpoint-sidang-skripsi.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-solid fa-desktop text-white text-5xl group-hover:scale-110 group-hover:text-indigo-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-indigo-600 uppercase mb-2">Bimbingan Sidang</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Tips Membuat PowerPoint Sidang Skripsi yang Menarik dan Profesional</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Jangan buat PPT sidang skripsi yang membosankan! Ikuti tips membuat presentasi PowerPoint yang visual, ringkas, dan elegan.</p>
+                                <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>18 Ags 2026</span><span>5 min baca</span></div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="info">
+                        <a href="cara-menghubungi-dosen-pembimbing.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-solid fa-comments text-white text-5xl group-hover:scale-110 group-hover:text-green-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-green-600 uppercase mb-2">Konsultasi Skripsi</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Etika Menghubungi Dosen Pembimbing via WhatsApp Agar Tidak Diabaikan</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Sering diabaikan (di-read doang) oleh dosen pembimbing? Pelajari etika dan template chat yang sopan untuk menghubungi dosen via WhatsApp.</p>
+                                <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>18 Ags 2026</span><span>5 min baca</span></div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="sidang">
+                        <a href="perbedaan-skripsi-tesis-dan-disertasi.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-solid fa-book-bookmark text-white text-5xl group-hover:scale-110 group-hover:text-rose-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-rose-600 uppercase mb-2">Tips Kuliah</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Memahami Perbedaan Skripsi, Tesis, dan Disertasi yang Wajib Tahu</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Apa bedanya Skripsi (S1), Tesis (S2), dan Disertasi (S3)? Simak perbedaan tingkat kesulitan, bobot kebaruan (novelty), dan tujuannya di sini.</p>
+                                <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>18 Ags 2026</span><span>5 min baca</span></div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="format">
+                        <a href="cara-mengutip-jurnal-dari-internet.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-solid fa-quote-right text-white text-5xl group-hover:scale-110 group-hover:text-indigo-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-indigo-600 uppercase mb-2">Format & Template</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Cara Mengutip Jurnal dari Internet dengan Benar Sesuai Format APA</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Panduan lengkap cara mengutip jurnal dari internet dengan benar sesuai format APA dan Harvard untuk daftar pustaka skripsi Anda.</p>
+                                <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>17 Ags 2026</span><span>5 min baca</span></div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="penulisan">
+                        <a href="struktur-proposal-skripsi-yang-benar.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-solid fa-list-ol text-white text-5xl group-hover:scale-110 group-hover:text-emerald-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-emerald-600 uppercase mb-2">Penyusunan Skripsi</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Struktur Proposal Skripsi yang Benar agar Cepat di-ACC Dosen</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Ketahui struktur proposal skripsi yang benar dan lengkap mulai dari Bab 1 hingga Bab 3 agar proposal Anda langsung disetujui.</p>
+                                <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>17 Ags 2026</span><span>5 min baca</span></div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="format">
+                        <a href="rekomendasi-website-parafrase.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-solid fa-shield-halved text-white text-5xl group-hover:scale-110 group-hover:text-red-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-red-600 uppercase tracking-wider mb-2">Format & Anti Plagiasi</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600 transition-colors leading-snug">5 Website Parafrase Terbaik untuk Lolos Plagiarisme Turnitin</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm leading-relaxed line-clamp-3">
+                                    Skor Turnitin merah semua? Jangan panik. Turunkan skor similarity index naskah skripsi Anda menggunakan tools parafrase online gratis ini.
+                                </p>
+                                <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
+                                    <span><i class="fa-regular fa-calendar mr-1"></i> 17 Ags 2026</span>
+                                    <span><i class="fa-regular fa-clock mr-1"></i> 4 min baca</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="sidang">
+                        <a href="kesalahan-umum-mengerjakan-skripsi.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-solid fa-triangle-exclamation text-white text-5xl group-hover:scale-110 group-hover:text-orange-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-orange-600 uppercase mb-2">Tips Kuliah</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">5 Kesalahan Umum Mahasiswa Saat Mengerjakan Skripsi</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Hindari kesalahan umum dan fatal ini saat menyusun skripsi agar bisa lulus tepat waktu, hemat biaya, dan terhindar dari stres.</p>
+                                <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>17 Ags 2026</span><span>5 min baca</span></div>
+                            </div>
+                        </a>
+                    </article>
+
                     <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="penulisan">
                         <a href="rahasia-dosen-pembimbing-skripsi.html" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
-                                <i class="fa-solid fa-user-tie text-white text-5xl group-hover:scale-110 group-hover:text-brand-300 transition-transform duration-500 z-10"></i>
+                                <i class="fa-solid fa-user-tie text-white text-5xl group-hover:scale-110 group-hover:text-red-300 transition-transform duration-500 z-10"></i>
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
-                                <span class="text-xs font-bold text-brand-600 uppercase mb-2">Penulisan Skripsi</span>
+                                <span class="text-xs font-bold text-red-600 uppercase mb-2">Konsultasi Skripsi</span>
                                 <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Rahasia Dosen Pembimbing: Kesalahan Fatal yang Bikin Skripsi Dicoret</h2>
                                 <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Mengerjakan skripsi seringkali terhambat oleh revisi dosen. Ketahui kesalahan fatal yang sering mahasiswa lakukan agar skripsi cepat ACC.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>12 Ags 2026</span><span>5 min baca</span></div>
@@ -255,8 +549,8 @@
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <span class="text-xs font-bold text-purple-600 uppercase mb-2">Publikasi Jurnal</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-purple-600">Jangan Asal Submit! Ini Beda Jurnal SINTA 1 hingga 6</h2>
-                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Masih bingung dengan tingkatan Jurnal SINTA? Simak perbedaan SINTA 1 hingga 6 agar publikasi jurnal kamu sesuai syarat kelulusan.</p>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Jangan Asal Submit! Ini Beda Jurnal SINTA 1 hingga 6</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Masih bingung dengan tingkatan Jurnal SINTA? Simak perbedaan SINTA 1 hingga 6 agar publikasi jurnal kamu sesuai syarat kelulusan kampus.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>12 Ags 2026</span><span>5 min baca</span></div>
                             </div>
                         </a>
@@ -268,8 +562,8 @@
                                 <i class="fa-solid fa-file-word text-white text-5xl group-hover:scale-110 group-hover:text-blue-300 transition-transform duration-500 z-10"></i>
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
-                                <span class="text-xs font-bold text-blue-600 uppercase mb-2">Format & Plagiasi</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-blue-600">Margin Berantakan Bikin Pusing? Cara Merapikan Format Skripsi</h2>
+                                <span class="text-xs font-bold text-blue-600 uppercase mb-2">Format & Template</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Margin Berantakan Bikin Pusing? Cara Merapikan Format Skripsi</h2>
                                 <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Mengatur format margin, daftar isi, dan penomoran halaman skripsi seringkali memakan waktu. Ikuti panduan praktis ini.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>12 Ags 2026</span><span>6 min baca</span></div>
                             </div>
@@ -283,8 +577,8 @@
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <span class="text-xs font-bold text-amber-600 uppercase mb-2">Tips Kuliah</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-amber-600">Terjebak Deadline? 5 Trik Manajemen Waktu Mahasiswa Sibuk</h2>
-                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Sibuk dengan kegiatan organisasi atau part-time? Ini 5 trik manajemen waktu mahasiswa agar tugas kuliah selesai tepat waktu.</p>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Terjebak Deadline? 5 Trik Manajemen Waktu Mahasiswa Sibuk</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Sibuk dengan kegiatan organisasi atau part-time? Ini 5 trik manajemen waktu mahasiswa agar tugas kuliah selesai tepat waktu tanpa begadang.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>12 Ags 2026</span><span>5 min baca</span></div>
                             </div>
                         </a>
@@ -296,28 +590,28 @@
                                 <i class="fa-solid fa-shield-halved text-white text-5xl group-hover:scale-110 group-hover:text-red-300 transition-transform duration-500 z-10"></i>
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
-                                <span class="text-xs font-bold text-red-600 uppercase mb-2">Format & Plagiasi</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-red-600">Cara Ampuh Lolos Uji Turnitin Skripsi dengan Aman dan Cepat</h2>
+                                <span class="text-xs font-bold text-red-600 uppercase mb-2">Anti Plagiasi</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Cara Ampuh Lolos Uji Turnitin Skripsi dengan Aman dan Cepat</h2>
                                 <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Plagiarisme adalah musuh terbesar bagi mahasiswa. Berikut panduan aman untuk lolos uji Turnitin dengan parafrase yang benar.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>10 Ags 2026</span><span>4 min baca</span></div>
                             </div>
                         </a>
                     </article>
-
+                    
                     <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="penulisan">
                         <a href="menyusun-bab-4-skripsi-dengan-mudah.html" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
                                 <i class="fa-solid fa-chart-column text-white text-5xl group-hover:scale-110 group-hover:text-blue-300 transition-transform duration-500 z-10"></i>
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
-                                <span class="text-xs font-bold text-blue-600 uppercase mb-2">Penulisan Skripsi</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-blue-600">Tips Menyusun Bab 4 Skripsi (Hasil dan Pembahasan) Agar Cepat ACC</h2>
+                                <span class="text-xs font-bold text-blue-600 uppercase mb-2">Penyusunan Skripsi</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Tips Menyusun Bab 4 Skripsi (Hasil dan Pembahasan) Agar Cepat ACC</h2>
                                 <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Bab 4 adalah jantung skripsi. Pelajari cara membuktikan rumusan masalah dan menyajikan data dengan visual yang menarik.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>10 Ags 2026</span><span>5 min baca</span></div>
                             </div>
                         </a>
                     </article>
-
+                    
                     <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="jurnal">
                         <a href="situs-jurnal-internasional-gratis-untuk-skripsi.html" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
@@ -325,13 +619,13 @@
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <span class="text-xs font-bold text-purple-600 uppercase mb-2">Referensi Jurnal</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-purple-600">Daftar Situs Jurnal Internasional Gratis Terbaik untuk Referensi</h2>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Daftar Situs Jurnal Internasional Gratis Terbaik untuk Referensi</h2>
                                 <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Simak daftar situs jurnal internasional gratis (Open Access) yang bisa Anda gunakan untuk menyelesaikan skripsi Anda.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>10 Ags 2026</span><span>3 min baca</span></div>
                             </div>
                         </a>
                     </article>
-
+                    
                     <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="sidang">
                         <a href="panduan-revisi-skripsi-cepat-acc.html" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
@@ -339,13 +633,13 @@
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <span class="text-xs font-bold text-green-600 uppercase mb-2">Bimbingan Sidang</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-green-600">Panduan Revisi Skripsi Cepat ACC Pasca Sidang</h2>
-                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Sidang skripsi telah berlalu, tetapi euforia belum bisa dirayakan karena setumpuk revisi menanti. Bagaimana cara menyelesaikannya?</p>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Panduan Revisi Skripsi Cepat ACC Pasca Sidang</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Sidang skripsi telah berlalu, tetapi euforia belum bisa dirayakan karena setumpuk revisi menanti. Bagaimana cara menyelesaikannya secara efisien?</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>10 Ags 2026</span><span>3 min baca</span></div>
                             </div>
                         </a>
                     </article>
-                    
+
                     <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="penulisan">
                         <a href="tips-memilih-judul-skripsi.html" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
@@ -353,8 +647,8 @@
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <span class="text-xs font-bold text-yellow-600 uppercase mb-2">Tips Skripsi</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-yellow-600">Tips Memilih Judul Skripsi yang Mudah di ACC Dosen</h2>
-                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Bingung mencari judul skripsi? Simak tips memilih judul skripsi yang menarik, relevan, dan mudah mendapatkan ACC dosen.</p>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Tips Memilih Judul Skripsi yang Mudah di ACC Dosen</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Bingung mencari judul skripsi? Simak tips memilih judul skripsi yang menarik, relevan, dan mudah mendapatkan ACC dari dosen pembimbing.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>8 Ags 2026</span><span>3 min baca</span></div>
                             </div>
                         </a>
@@ -367,7 +661,7 @@
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <span class="text-xs font-bold text-lime-600 uppercase mb-2">Tutorial</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-lime-600">Cara Menggunakan Mendeley untuk Daftar Pustaka Otomatis</h2>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Cara Menggunakan Mendeley untuk Daftar Pustaka Otomatis</h2>
                                 <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Panduan lengkap cara menggunakan Mendeley untuk membuat daftar pustaka skripsi secara otomatis dengan berbagai format sitasi.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>8 Ags 2026</span><span>3 min baca</span></div>
                             </div>
@@ -381,7 +675,7 @@
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <span class="text-xs font-bold text-orange-600 uppercase mb-2">Metodologi</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-orange-600">Teknik Wawancara Mendalam untuk Penelitian Kualitatif</h2>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Teknik Wawancara Mendalam untuk Penelitian Kualitatif</h2>
                                 <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Pelajari teknik wawancara mendalam (in-depth interview) untuk menggali data berkualitas dalam penelitian skripsi kualitatif Anda.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>8 Ags 2026</span><span>3 min baca</span></div>
                             </div>
@@ -395,13 +689,13 @@
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <span class="text-xs font-bold text-teal-600 uppercase mb-2">Referensi Jurnal</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-teal-600">Cara Mencari Jurnal Internasional Gratis untuk Referensi Skripsi</h2>
-                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Bingung mencari referensi jurnal internasional yang gratis dan kredibel? Simak panduan lengkap cara mengakses jurnal secara legal.</p>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Cara Mencari Jurnal Internasional Gratis untuk Referensi Skripsi</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Bingung mencari referensi jurnal internasional yang gratis dan kredibel? Simak panduan lengkap cara mengakses jurnal secara gratis dan legal.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>7 Ags 2026</span><span>3 min baca</span></div>
                             </div>
                         </a>
                     </article>
-                    
+
                     <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="sidang">
                         <a href="tips-menghadapi-sidang-skripsi.html" class="block h-full flex flex-col">
                             <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
@@ -409,8 +703,8 @@
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <span class="text-xs font-bold text-rose-600 uppercase mb-2">Sidang Skripsi</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-rose-600">Tips Sukses Menghadapi Sidang Skripsi agar Lulus dengan Nilai A</h2>
-                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Khawatir menghadapi sidang skripsi? Pelajari tips sukses dan strategi jitu agar lulus dengan nilai A dan tanpa revisi berat.</p>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Tips Sukses Menghadapi Sidang Skripsi agar Lulus dengan Nilai A</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Khawatir menghadapi sidang skripsi? Pelajari tips sukses dan strategi jitu agar lulus dengan nilai A dan tanpa revisi berat. Siapkan dirimu dari sekarang!</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>7 Ags 2026</span><span>3 min baca</span></div>
                             </div>
                         </a>
@@ -423,7 +717,7 @@
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <span class="text-xs font-bold text-emerald-600 uppercase mb-2">Metodologi</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-emerald-600">Memahami Perbedaan Metode Penelitian Kualitatif dan Kuantitatif</h2>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Memahami Perbedaan Metode Penelitian Kualitatif dan Kuantitatif</h2>
                                 <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Bingung membedakan penelitian kualitatif dan kuantitatif? Pelajari perbedaan mendasarnya agar tidak salah pilih metode untuk skripsimu.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>7 Ags 2026</span><span>3 min baca</span></div>
                             </div>
@@ -437,19 +731,72 @@
                             </div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <span class="text-xs font-bold text-indigo-600 uppercase mb-2">Tips Skripsi</span>
-                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-indigo-600">Cara Lolos Uji Turnitin dan Tips Parafrase Skripsi yang Benar</h2>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Cara Lolos Uji Turnitin dan Tips Parafrase Skripsi yang Benar</h2>
                                 <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Skripsi kamu kena tegur karena tingkat plagiarisme tinggi? Pelajari cara lolos Turnitin dengan teknik parafrase yang aman dan teruji.</p>
                                 <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>7 Ags 2026</span><span>3 min baca</span></div>
                             </div>
                         </a>
                     </article>
-                    
-                    <!-- NOTE: Jika ada artikel ke 16 sampai 36, letakkan struktur kodenya persis seperti di atas. -->
-                    <!-- JS secara otomatis akan menyembunyikan sisa artikel dan menampilkannya per 6 block. -->
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="penulisan">
+                        <a href="tips-lulus-skripsi-cepat.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-solid fa-graduation-cap text-white text-5xl group-hover:scale-110 group-hover:text-pink-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-pink-600 uppercase mb-2">Tips Skripsi</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">7 Tips Lulus Skripsi Cepat Tanpa Pusing Revisi</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Merasa stuck dan revisi terus-menerus? Berikut adalah 7 rahasia yang biasa digunakan mahasiswa berprestasi untuk menyelesaikan skripsi dalam waktu kurang dari 3 bulan.</p>
+                                <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>6 Ags 2026</span><span>3 min baca</span></div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="format">
+                        <a href="cara-membuat-daftar-isi-otomatis-word.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-regular fa-file-word text-white text-5xl group-hover:scale-110 group-hover:text-blue-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-blue-600 uppercase mb-2">Tutorial Word</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Cara Membuat Daftar Isi Otomatis di Word dengan Mudah</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Daftar isi adalah salah satu hal yang paling sering direvisi oleh Dosen. Mari pelajari cara memanfaatkan fitur Heading dan Table of Contents di Word agar hidup lebih tenang.</p>
+                                <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>6 Ags 2026</span><span>3 min baca</span></div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="jurnal">
+                        <a href="panduan-publikasi-jurnal-sinta.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-solid fa-book-open-reader text-white text-5xl group-hover:scale-110 group-hover:text-purple-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-purple-600 uppercase mb-2">Jurnal & Sinta</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Panduan Lengkap Publikasi Jurnal Sinta untuk Pemula</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Diwajibkan publikasi jurnal Sinta sebagai syarat kelulusan? Jangan panik, ini adalah tahapan-tahapan yang harus Anda siapkan mulai dari konversi hingga submit.</p>
+                                <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>6 Ags 2026</span><span>3 min baca</span></div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-item js-hidden bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex-col group transform hover:-translate-y-1" data-category="sidang">
+                        <a href="cara-mengerjakan-makalah-presentasi-cepat.html" class="block h-full flex flex-col">
+                            <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden flex items-center justify-center">
+                                <i class="fa-solid fa-person-chalkboard text-white text-5xl group-hover:scale-110 group-hover:text-amber-300 transition-transform duration-500 z-10"></i>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <span class="text-xs font-bold text-amber-600 uppercase mb-2">Tips Tugas Kuliah</span>
+                                <h2 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-brand-600">Cara Mengerjakan Makalah dan Presentasi PPT dengan Cepat</h2>
+                                <p class="text-slate-600 mb-4 flex-grow text-sm line-clamp-3">Tugas kuliah menumpuk dengan deadline mepet? Ikuti panduan cara menyelesaikan makalah dan mendesain presentasi PPT secara instan.</p>
+                                <div class="flex justify-between mt-auto pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium"><span>6 Ags 2026</span><span>3 min baca</span></div>
+                            </div>
+                        </a>
+                    </article>
 
                 </div>
                 
-                <!-- Pagination / Load More Button -->
+                <!-- Pagination / Load More -->
                 <div class="mt-12 text-center" id="loadMoreContainer">
                     <button id="loadMoreBtn" class="px-8 py-3.5 bg-white text-brand-700 font-bold rounded-full border-2 border-brand-100 shadow-sm hover:border-brand-300 hover:bg-brand-50 transition-all flex items-center justify-center mx-auto gap-2">
                         Muat Lebih Banyak Artikel <i class="fa-solid fa-rotate-right text-sm"></i>
@@ -462,6 +809,7 @@
         <section class="py-12 bg-slate-50 pb-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="bg-gradient-to-r from-brand-900 to-brand-800 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden shadow-2xl" data-aos="zoom-in">
+                    <!-- Abstract Background -->
                     <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-white opacity-5 blur-2xl"></div>
                     <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 rounded-full bg-accent-500 opacity-20 blur-3xl"></div>
                     
@@ -533,7 +881,7 @@
         </div>
     </footer>
 
-    <!-- Floating Actions -->
+    <!-- Floating Actions (WhatsApp & Back to top) -->
     <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end">
         <button id="backToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="bg-slate-800/80 backdrop-blur-sm text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-brand-600 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none" aria-label="Kembali ke Atas">
             <i class="fa-solid fa-chevron-up text-sm"></i>
