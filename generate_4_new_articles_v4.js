@@ -309,24 +309,21 @@ articles.forEach(article => {
 
   const htmlContent = `${head}
     <!-- Content Section -->
-    <main class="pt-24 lg:pt-32 pb-20 bg-slate-50 min-h-screen">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-            
-            <!-- Breadcrumb -->
-            <nav class="flex mb-8 text-sm text-slate-500 bg-white px-4 py-3 rounded-xl shadow-sm border border-slate-100">
-                <ol class="flex items-center space-x-2">
-                    <li><a href="index.html" class="hover:text-brand-600 transition-colors"><i class="fa-solid fa-house"></i> Beranda</a></li>
-                    <li><i class="fa-solid fa-chevron-right text-[10px] mx-2"></i></li>
-                    <li><a href="blog.html" class="hover:text-brand-600 transition-colors">Blog</a></li>
-                    <li><i class="fa-solid fa-chevron-right text-[10px] mx-2"></i></li>
-                    <li class="text-brand-700 font-bold truncate">${article.title}</li>
-                </ol>
+    <section class="pt-28 pb-10 lg:pt-36 lg:pb-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Breadcrumbs -->
+            <nav class="text-sm text-slate-500 mb-8 font-medium">
+                <a href="index.html" class="hover:text-brand-600 transition-colors">Beranda</a> 
+                <span class="mx-2"><i class="fa-solid fa-chevron-right text-xs"></i></span> 
+                <a href="blog.html" class="hover:text-brand-600 transition-colors">Blog</a>
+                <span class="mx-2"><i class="fa-solid fa-chevron-right text-xs"></i></span>
+                <span class="text-slate-800">${article.title}</span>
             </nav>
 
             <!-- Article Header -->
             <div class="mb-10 text-center">
                 <span class="inline-block ${article.color} text-${article.color.replace('bg-', '').replace('-50', '')}-700 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">${article.category}</span>
-                <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+                <h1 class="text-3xl md:text-5xl font-serif font-extrabold text-slate-900 leading-tight mb-6">
                     ${article.h1}
                 </h1>
                 <div class="flex items-center justify-center text-sm text-slate-500 space-x-4">
@@ -336,8 +333,9 @@ articles.forEach(article => {
             </div>
 
             <!-- Hero Image -->
-            <div class="rounded-3xl overflow-hidden shadow-xl mb-12 h-64 md:h-96 ${article.color} flex items-center justify-center border border-slate-100">
-                <i class="fa-solid ${article.icon} text-9xl ${article.iconColor}"></i>
+            <div class="rounded-3xl overflow-hidden shadow-xl mb-12 h-64 md:h-96 ${article.color} flex items-center justify-center border border-slate-100 relative">
+                <div class="absolute inset-0 bg-gradient-to-tr from-${article.color.replace('bg-', '').replace('-50', '')}-100 to-transparent opacity-50"></div>
+                <i class="fa-solid ${article.icon} text-9xl ${article.iconColor} z-10 animate-float"></i>
             </div>
 
             <!-- Article Content -->
@@ -362,7 +360,7 @@ ${article.body}
                 </div>
             </article>
         </div>
-    </main>
+    </section>
 ${footerTemplate}`;
 
   fs.writeFileSync(path.join(__dirname, article.filename), htmlContent);
