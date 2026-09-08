@@ -302,19 +302,24 @@ const articles = [
 ];
 
 articles.forEach(article => {
-  const htmlContent = `${headerTemplate}
+  let head = headerTemplate.replace(/<title>.*<\/title>/, `<title>${article.title} - Pena Elit Akademika</title>`);
+  head = head.replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${article.desc}">`);
+  head = head.replace(/<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${article.title} - Pena Elit">`);
+  head = head.replace(/<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="${article.desc}">`);
+
+  const htmlContent = `${head}
     <!-- Content Section -->
-    <section class="pt-32 pb-20 bg-slate-50 min-h-screen">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main class="pt-24 lg:pt-32 pb-20 bg-slate-50 min-h-screen">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
             
             <!-- Breadcrumb -->
-            <nav class="flex mb-8 text-sm text-slate-500">
+            <nav class="flex mb-8 text-sm text-slate-500 bg-white px-4 py-3 rounded-xl shadow-sm border border-slate-100">
                 <ol class="flex items-center space-x-2">
                     <li><a href="index.html" class="hover:text-brand-600 transition-colors"><i class="fa-solid fa-house"></i> Beranda</a></li>
-                    <li><i class="fa-solid fa-chevron-right text-xs mx-2"></i></li>
+                    <li><i class="fa-solid fa-chevron-right text-[10px] mx-2"></i></li>
                     <li><a href="blog.html" class="hover:text-brand-600 transition-colors">Blog</a></li>
-                    <li><i class="fa-solid fa-chevron-right text-xs mx-2"></i></li>
-                    <li class="text-slate-800 font-medium truncate">${article.title}</li>
+                    <li><i class="fa-solid fa-chevron-right text-[10px] mx-2"></i></li>
+                    <li class="text-brand-700 font-bold truncate">${article.title}</li>
                 </ol>
             </nav>
 
@@ -357,7 +362,7 @@ ${article.body}
                 </div>
             </article>
         </div>
-    </section>
+    </main>
 ${footerTemplate}`;
 
   fs.writeFileSync(path.join(__dirname, article.filename), htmlContent);
