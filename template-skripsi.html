@@ -225,95 +225,110 @@
 
     <!-- Modals -->
     <!-- Modal 1 -->
-    <div id="modal-1" class="fixed inset-0 z-[60] hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity opacity-0 duration-300">
-        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-4xl h-[85vh] flex flex-col transform scale-95 transition-transform duration-300 relative overflow-hidden">
-            <div class="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50">
-                <h3 class="font-bold text-lg text-slate-800">Preview: Pengaruh Pemasaran Digital (Bab 1)</h3>
-                <button onclick="closePreview('modal-1')" class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-200 text-slate-600 hover:bg-red-500 hover:text-white transition-colors">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="flex-grow p-8 overflow-y-auto font-serif text-justify" style="line-height: 1.5; font-size: 16px;">
-                <h2 class="text-center font-bold mb-6 text-xl">BAB I<br>PENDAHULUAN</h2>
-                <h3 class="font-bold mb-2">1.1 Latar Belakang Masalah</h3>
-                <p class="indent-10 mb-4">Perkembangan teknologi informasi dan komunikasi di era globalisasi saat ini telah membawa perubahan yang sangat signifikan dalam berbagai aspek kehidupan manusia, termasuk di dalam dunia bisnis. Salah satu perubahan nyata yang terjadi adalah pergeseran strategi pemasaran dari konvensional menjadi pemasaran digital (digital marketing). Menurut Kotler dan Keller (2016), pemasaran digital merupakan bentuk pemasaran langsung yang menghubungkan konsumen secara interaktif menggunakan teknologi terbaru.</p>
-                <p class="indent-10 mb-4">Di Indonesia, penetrasi pengguna internet terus mengalami peningkatan dari tahun ke tahun. Hal ini dimanfaatkan oleh banyak perusahaan untuk memperluas pangsa pasar mereka melalui platform digital seperti media sosial, website, dan e-commerce. Fenomena ini menarik untuk diteliti karena meskipun pemasaran digital menawarkan jangkauan yang lebih luas, tingkat konversi atau keputusan pembelian konsumen tidak selalu berbanding lurus dengan tingginya paparan iklan digital.</p>
-                <p class="indent-10 mb-4">Berdasarkan data awal yang diperoleh dari Perusahaan X, terjadi fluktuasi penjualan dalam kurun waktu satu tahun terakhir meskipun anggaran untuk pemasaran digital telah ditingkatkan sebesar 30%. Ketidakstabilan ini menunjukkan adanya faktor-faktor lain dalam strategi pemasaran digital yang belum optimal dalam mempengaruhi keputusan pembelian konsumen. Oleh karena itu, penelitian ini bertujuan untuk menguji seberapa besar pengaruh pemasaran digital terhadap keputusan pembelian.</p>
-                <h3 class="font-bold mb-2 mt-6">1.2 Rumusan Masalah</h3>
-                <p class="mb-4">Berdasarkan latar belakang masalah yang telah diuraikan, maka rumusan masalah dalam penelitian ini adalah:</p>
-                <ol class="list-decimal pl-5 mb-4">
-                    <li class="pl-2 mb-1">Apakah pemasaran digital berpengaruh secara parsial terhadap keputusan pembelian pada Perusahaan X?</li>
-                    <li class="pl-2 mb-1">Seberapa besar pengaruh pemasaran digital terhadap keputusan pembelian konsumen pada Perusahaan X?</li>
-                </ol>
-                <h3 class="font-bold mb-2 mt-6">1.3 Tujuan Penelitian</h3>
-                <p class="mb-4">Sesuai dengan rumusan masalah di atas, maka tujuan dari penelitian ini adalah:</p>
-                <ol class="list-decimal pl-5 mb-4">
-                    <li class="pl-2 mb-1">Untuk mengetahui pengaruh pemasaran digital secara parsial terhadap keputusan pembelian pada Perusahaan X.</li>
-                    <li class="pl-2 mb-1">Untuk menganalisis seberapa besar pengaruh pemasaran digital terhadap keputusan pembelian konsumen pada Perusahaan X.</li>
-                </ol>
+    <div id="modal-1" class="fixed inset-0 z-[60] hidden transition-opacity opacity-0 duration-300">
+        <div class="fixed inset-0 bg-black/60 backdrop-blur-sm modal-overlay" onclick="closePreview('modal-1')"></div>
+        <div class="fixed inset-0 z-10 overflow-y-auto pointer-events-none">
+            <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-6">
+                <div class="modal-panel relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all w-full max-w-4xl scale-95 duration-300 pointer-events-auto flex flex-col max-h-[90vh]">
+                    <div class="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50 sticky top-0 z-20">
+                        <h3 class="font-bold text-lg text-slate-800">Preview: Pengaruh Pemasaran Digital (Bab 1)</h3>
+                        <button onclick="closePreview('modal-1')" class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-200 text-slate-600 hover:bg-red-500 hover:text-white transition-colors">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="flex-grow p-6 sm:p-8 overflow-y-auto font-serif text-justify text-slate-800" style="line-height: 1.6; font-size: 16px;">
+                        <h2 class="text-center font-bold mb-6 text-xl">BAB I<br>PENDAHULUAN</h2>
+                        <h3 class="font-bold mb-2">1.1 Latar Belakang Masalah</h3>
+                        <p class="indent-10 mb-4">Perkembangan teknologi informasi dan komunikasi di era globalisasi saat ini telah membawa perubahan yang sangat signifikan dalam berbagai aspek kehidupan manusia, termasuk di dalam dunia bisnis. Salah satu perubahan nyata yang terjadi adalah pergeseran strategi pemasaran dari konvensional menjadi pemasaran digital (digital marketing). Menurut Kotler dan Keller (2016), pemasaran digital merupakan bentuk pemasaran langsung yang menghubungkan konsumen secara interaktif menggunakan teknologi terbaru.</p>
+                        <p class="indent-10 mb-4">Di Indonesia, penetrasi pengguna internet terus mengalami peningkatan dari tahun ke tahun. Hal ini dimanfaatkan oleh banyak perusahaan untuk memperluas pangsa pasar mereka melalui platform digital seperti media sosial, website, dan e-commerce. Fenomena ini menarik untuk diteliti karena meskipun pemasaran digital menawarkan jangkauan yang lebih luas, tingkat konversi atau keputusan pembelian konsumen tidak selalu berbanding lurus dengan tingginya paparan iklan digital.</p>
+                        <p class="indent-10 mb-4">Berdasarkan data awal yang diperoleh dari Perusahaan X, terjadi fluktuasi penjualan dalam kurun waktu satu tahun terakhir meskipun anggaran untuk pemasaran digital telah ditingkatkan sebesar 30%. Ketidakstabilan ini menunjukkan adanya faktor-faktor lain dalam strategi pemasaran digital yang belum optimal dalam mempengaruhi keputusan pembelian konsumen. Oleh karena itu, penelitian ini bertujuan untuk menguji seberapa besar pengaruh pemasaran digital terhadap keputusan pembelian.</p>
+                        <h3 class="font-bold mb-2 mt-6">1.2 Rumusan Masalah</h3>
+                        <p class="mb-4">Berdasarkan latar belakang masalah yang telah diuraikan, maka rumusan masalah dalam penelitian ini adalah:</p>
+                        <ol class="list-decimal pl-5 mb-4">
+                            <li class="pl-2 mb-1">Apakah pemasaran digital berpengaruh secara parsial terhadap keputusan pembelian pada Perusahaan X?</li>
+                            <li class="pl-2 mb-1">Seberapa besar pengaruh pemasaran digital terhadap keputusan pembelian konsumen pada Perusahaan X?</li>
+                        </ol>
+                        <h3 class="font-bold mb-2 mt-6">1.3 Tujuan Penelitian</h3>
+                        <p class="mb-4">Sesuai dengan rumusan masalah di atas, maka tujuan dari penelitian ini adalah:</p>
+                        <ol class="list-decimal pl-5 mb-4">
+                            <li class="pl-2 mb-1">Untuk mengetahui pengaruh pemasaran digital secara parsial terhadap keputusan pembelian pada Perusahaan X.</li>
+                            <li class="pl-2 mb-1">Untuk menganalisis seberapa besar pengaruh pemasaran digital terhadap keputusan pembelian konsumen pada Perusahaan X.</li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Modal 2 -->
-    <div id="modal-2" class="fixed inset-0 z-[60] hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity opacity-0 duration-300">
-        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-4xl h-[85vh] flex flex-col transform scale-95 transition-transform duration-300 relative overflow-hidden">
-            <div class="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50">
-                <h3 class="font-bold text-lg text-slate-800">Preview: Strategi Komunikasi Pemasaran (Bab 1)</h3>
-                <button onclick="closePreview('modal-2')" class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-200 text-slate-600 hover:bg-red-500 hover:text-white transition-colors">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="flex-grow p-8 overflow-y-auto font-serif text-justify" style="line-height: 1.5; font-size: 16px;">
-                <h2 class="text-center font-bold mb-6 text-xl">BAB I<br>PENDAHULUAN</h2>
-                <h3 class="font-bold mb-2">1.1 Latar Belakang Masalah</h3>
-                <p class="indent-10 mb-4">Komunikasi pemasaran merupakan salah satu elemen penting dalam bauran pemasaran (marketing mix) yang bertujuan untuk menginformasikan, membujuk, dan mengingatkan konsumen tentang produk atau merek yang dijual. Di era modern ini, media sosial telah menjadi alat komunikasi massa yang paling efektif untuk membangun interaksi dua arah antara merek dan audiens. Platform seperti Instagram, TikTok, dan Twitter menawarkan fitur visual dan interaktif yang memudahkan penyampaian pesan.</p>
-                <p class="indent-10 mb-4">Brand Y, sebagai salah satu pelaku usaha di industri fashion lokal, menyadari pentingnya pemanfaatan media sosial. Namun, dalam pelaksanaannya, Brand Y seringkali menghadapi kendala dalam menentukan gaya komunikasi yang tepat sasaran dengan demografi pasar Gen-Z. Hal ini ditandai dengan tingkat interaksi (engagement rate) yang rendah pada unggahan-unggahan di akun resmi Instagram mereka selama periode kuartal pertama tahun ini.</p>
-                <p class="indent-10 mb-4">Penelitian-penelitian sebelumnya menunjukkan bahwa strategi komunikasi pemasaran yang tidak terencana dengan baik di media sosial cenderung diabaikan oleh pengguna. Oleh karena itu, penting untuk melakukan evaluasi mendalam terhadap elemen-elemen pesan, visual, dan waktu publikasi. Atas dasar itulah, penelitian mengenai "Strategi Komunikasi Pemasaran Brand Y Melalui Media Sosial Instagram" ini dilakukan untuk menemukan celah perbaikan yang konstruktif.</p>
-                <h3 class="font-bold mb-2 mt-6">1.2 Rumusan Masalah</h3>
-                <p class="mb-4">Berdasarkan latar belakang di atas, rumusan masalah dalam penelitian ini adalah:</p>
-                <ol class="list-decimal pl-5 mb-4">
-                    <li class="pl-2 mb-1">Bagaimana strategi komunikasi pemasaran yang diterapkan oleh Brand Y melalui media sosial Instagram?</li>
-                    <li class="pl-2 mb-1">Apa saja hambatan yang dihadapi oleh Brand Y dalam melaksanakan strategi komunikasi pemasaran di Instagram?</li>
-                </ol>
-                <h3 class="font-bold mb-2 mt-6">1.3 Tujuan Penelitian</h3>
-                <p class="mb-4">Tujuan yang ingin dicapai melalui penelitian ini adalah:</p>
-                <ol class="list-decimal pl-5 mb-4">
-                    <li class="pl-2 mb-1">Untuk mengetahui dan mendeskripsikan strategi komunikasi pemasaran Brand Y di Instagram.</li>
-                    <li class="pl-2 mb-1">Untuk mengidentifikasi berbagai hambatan dalam pelaksanaan strategi tersebut.</li>
-                </ol>
+    <div id="modal-2" class="fixed inset-0 z-[60] hidden transition-opacity opacity-0 duration-300">
+        <div class="fixed inset-0 bg-black/60 backdrop-blur-sm modal-overlay" onclick="closePreview('modal-2')"></div>
+        <div class="fixed inset-0 z-10 overflow-y-auto pointer-events-none">
+            <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-6">
+                <div class="modal-panel relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all w-full max-w-4xl scale-95 duration-300 pointer-events-auto flex flex-col max-h-[90vh]">
+                    <div class="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50 sticky top-0 z-20">
+                        <h3 class="font-bold text-lg text-slate-800">Preview: Strategi Komunikasi Pemasaran (Bab 1)</h3>
+                        <button onclick="closePreview('modal-2')" class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-200 text-slate-600 hover:bg-red-500 hover:text-white transition-colors">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="flex-grow p-6 sm:p-8 overflow-y-auto font-serif text-justify text-slate-800" style="line-height: 1.6; font-size: 16px;">
+                        <h2 class="text-center font-bold mb-6 text-xl">BAB I<br>PENDAHULUAN</h2>
+                        <h3 class="font-bold mb-2">1.1 Latar Belakang Masalah</h3>
+                        <p class="indent-10 mb-4">Komunikasi pemasaran merupakan salah satu elemen penting dalam bauran pemasaran (marketing mix) yang bertujuan untuk menginformasikan, membujuk, dan mengingatkan konsumen tentang produk atau merek yang dijual. Di era modern ini, media sosial telah menjadi alat komunikasi massa yang paling efektif untuk membangun interaksi dua arah antara merek dan audiens. Platform seperti Instagram, TikTok, dan Twitter menawarkan fitur visual dan interaktif yang memudahkan penyampaian pesan.</p>
+                        <p class="indent-10 mb-4">Brand Y, sebagai salah satu pelaku usaha di industri fashion lokal, menyadari pentingnya pemanfaatan media sosial. Namun, dalam pelaksanaannya, Brand Y seringkali menghadapi kendala dalam menentukan gaya komunikasi yang tepat sasaran dengan demografi pasar Gen-Z. Hal ini ditandai dengan tingkat interaksi (engagement rate) yang rendah pada unggahan-unggahan di akun resmi Instagram mereka selama periode kuartal pertama tahun ini.</p>
+                        <p class="indent-10 mb-4">Penelitian-penelitian sebelumnya menunjukkan bahwa strategi komunikasi pemasaran yang tidak terencana dengan baik di media sosial cenderung diabaikan oleh pengguna. Oleh karena itu, penting untuk melakukan evaluasi mendalam terhadap elemen-elemen pesan, visual, dan waktu publikasi. Atas dasar itulah, penelitian mengenai "Strategi Komunikasi Pemasaran Brand Y Melalui Media Sosial Instagram" ini dilakukan untuk menemukan celah perbaikan yang konstruktif.</p>
+                        <h3 class="font-bold mb-2 mt-6">1.2 Rumusan Masalah</h3>
+                        <p class="mb-4">Berdasarkan latar belakang di atas, rumusan masalah dalam penelitian ini adalah:</p>
+                        <ol class="list-decimal pl-5 mb-4">
+                            <li class="pl-2 mb-1">Bagaimana strategi komunikasi pemasaran yang diterapkan oleh Brand Y melalui media sosial Instagram?</li>
+                            <li class="pl-2 mb-1">Apa saja hambatan yang dihadapi oleh Brand Y dalam melaksanakan strategi komunikasi pemasaran di Instagram?</li>
+                        </ol>
+                        <h3 class="font-bold mb-2 mt-6">1.3 Tujuan Penelitian</h3>
+                        <p class="mb-4">Tujuan yang ingin dicapai melalui penelitian ini adalah:</p>
+                        <ol class="list-decimal pl-5 mb-4">
+                            <li class="pl-2 mb-1">Untuk mengetahui dan mendeskripsikan strategi komunikasi pemasaran Brand Y di Instagram.</li>
+                            <li class="pl-2 mb-1">Untuk mengidentifikasi berbagai hambatan dalam pelaksanaan strategi tersebut.</li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Modal 3 -->
-    <div id="modal-3" class="fixed inset-0 z-[60] hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity opacity-0 duration-300">
-        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-4xl h-[85vh] flex flex-col transform scale-95 transition-transform duration-300 relative overflow-hidden">
-            <div class="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50">
-                <h3 class="font-bold text-lg text-slate-800">Preview: Sistem Pendukung Keputusan (Bab 1)</h3>
-                <button onclick="closePreview('modal-3')" class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-200 text-slate-600 hover:bg-red-500 hover:text-white transition-colors">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="flex-grow p-8 overflow-y-auto font-serif text-justify" style="line-height: 1.5; font-size: 16px;">
-                <h2 class="text-center font-bold mb-6 text-xl">BAB I<br>PENDAHULUAN</h2>
-                <h3 class="font-bold mb-2">1.1 Latar Belakang Masalah</h3>
-                <p class="indent-10 mb-4">Sumber Daya Manusia (SDM) merupakan aset yang sangat berharga bagi sebuah perusahaan. Untuk mempertahankan kualitas kinerja karyawan, banyak perusahaan menerapkan sistem penghargaan (reward) berupa pemilihan karyawan terbaik secara periodik. Pemberian penghargaan ini bertujuan untuk memotivasi karyawan agar terus meningkatkan produktivitas dan loyalitasnya terhadap perusahaan. Namun, proses pemilihan karyawan terbaik seringkali dihadapkan pada kendala subjektivitas apabila hanya mengandalkan penilaian manual dari atasan.</p>
-                <p class="indent-10 mb-4">PT. Maju Mundur merupakan perusahaan berkembang yang memiliki lebih dari 100 karyawan. Saat ini, proses penilaian kinerja karyawan masih dilakukan secara konvensional menggunakan Microsoft Excel dengan beberapa kriteria seperti kedisiplinan, target kerja, dan kerja sama tim. Metode ini rentan terhadap human error dan bias penilai, sehingga hasil keputusan terkadang dirasa kurang transparan dan tidak adil oleh sebagian karyawan.</p>
-                <p class="indent-10 mb-4">Untuk mengatasi permasalahan tersebut, dibutuhkan sebuah Sistem Pendukung Keputusan (SPK) yang mampu mengolah data penilaian secara objektif dan terkomputerisasi. Salah satu metode yang efektif digunakan dalam SPK adalah metode Simple Additive Weighting (SAW). Metode SAW dipilih karena mampu melakukan perangkingan secara presisi berdasarkan bobot kriteria yang telah ditentukan. Oleh karena itu, penelitian ini mengusulkan pengembangan "Sistem Pendukung Keputusan Pemilihan Karyawan Terbaik Menggunakan Metode SAW pada PT. Maju Mundur".</p>
-                <h3 class="font-bold mb-2 mt-6">1.2 Rumusan Masalah</h3>
-                <p class="mb-4">Berdasarkan latar belakang tersebut, maka rumusan masalah penelitian ini adalah:</p>
-                <ol class="list-decimal pl-5 mb-4">
-                    <li class="pl-2 mb-1">Bagaimana merancang dan membangun Sistem Pendukung Keputusan pemilihan karyawan terbaik berbasis web pada PT. Maju Mundur?</li>
-                    <li class="pl-2 mb-1">Bagaimana menerapkan metode Simple Additive Weighting (SAW) dalam proses penilaian kinerja karyawan?</li>
-                </ol>
-                <h3 class="font-bold mb-2 mt-6">1.3 Batasan Masalah</h3>
-                <p class="mb-4">Agar penelitian ini lebih terarah, maka batasan masalahnya adalah:</p>
-                <ol class="list-decimal pl-5 mb-4">
-                    <li class="pl-2 mb-1">Sistem dibangun berbasis web menggunakan bahasa pemrograman PHP dan database MySQL.</li>
-                    <li class="pl-2 mb-1">Kriteria penilaian dibatasi pada Kedisiplinan, Tanggung Jawab, Kerjasama, dan Pencapaian Target.</li>
-                    <li class="pl-2 mb-1">Metode perhitungan yang digunakan murni hanya metode SAW.</li>
-                </ol>
+    <div id="modal-3" class="fixed inset-0 z-[60] hidden transition-opacity opacity-0 duration-300">
+        <div class="fixed inset-0 bg-black/60 backdrop-blur-sm modal-overlay" onclick="closePreview('modal-3')"></div>
+        <div class="fixed inset-0 z-10 overflow-y-auto pointer-events-none">
+            <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-6">
+                <div class="modal-panel relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all w-full max-w-4xl scale-95 duration-300 pointer-events-auto flex flex-col max-h-[90vh]">
+                    <div class="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50 sticky top-0 z-20">
+                        <h3 class="font-bold text-lg text-slate-800">Preview: Sistem Pendukung Keputusan (Bab 1)</h3>
+                        <button onclick="closePreview('modal-3')" class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-200 text-slate-600 hover:bg-red-500 hover:text-white transition-colors">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="flex-grow p-6 sm:p-8 overflow-y-auto font-serif text-justify text-slate-800" style="line-height: 1.6; font-size: 16px;">
+                        <h2 class="text-center font-bold mb-6 text-xl">BAB I<br>PENDAHULUAN</h2>
+                        <h3 class="font-bold mb-2">1.1 Latar Belakang Masalah</h3>
+                        <p class="indent-10 mb-4">Sumber Daya Manusia (SDM) merupakan aset yang sangat berharga bagi sebuah perusahaan. Untuk mempertahankan kualitas kinerja karyawan, banyak perusahaan menerapkan sistem penghargaan (reward) berupa pemilihan karyawan terbaik secara periodik. Pemberian penghargaan ini bertujuan untuk memotivasi karyawan agar terus meningkatkan produktivitas dan loyalitasnya terhadap perusahaan. Namun, proses pemilihan karyawan terbaik seringkali dihadapkan pada kendala subjektivitas apabila hanya mengandalkan penilaian manual dari atasan.</p>
+                        <p class="indent-10 mb-4">PT. Maju Mundur merupakan perusahaan berkembang yang memiliki lebih dari 100 karyawan. Saat ini, proses penilaian kinerja karyawan masih dilakukan secara konvensional menggunakan Microsoft Excel dengan beberapa kriteria seperti kedisiplinan, target kerja, dan kerja sama tim. Metode ini rentan terhadap human error dan bias penilai, sehingga hasil keputusan terkadang dirasa kurang transparan dan tidak adil oleh sebagian karyawan.</p>
+                        <p class="indent-10 mb-4">Untuk mengatasi permasalahan tersebut, dibutuhkan sebuah Sistem Pendukung Keputusan (SPK) yang mampu mengolah data penilaian secara objektif dan terkomputerisasi. Salah satu metode yang efektif digunakan dalam SPK adalah metode Simple Additive Weighting (SAW). Metode SAW dipilih karena mampu melakukan perangkingan secara presisi berdasarkan bobot kriteria yang telah ditentukan. Oleh karena itu, penelitian ini mengusulkan pengembangan "Sistem Pendukung Keputusan Pemilihan Karyawan Terbaik Menggunakan Metode SAW pada PT. Maju Mundur".</p>
+                        <h3 class="font-bold mb-2 mt-6">1.2 Rumusan Masalah</h3>
+                        <p class="mb-4">Berdasarkan latar belakang tersebut, maka rumusan masalah penelitian ini adalah:</p>
+                        <ol class="list-decimal pl-5 mb-4">
+                            <li class="pl-2 mb-1">Bagaimana merancang dan membangun Sistem Pendukung Keputusan pemilihan karyawan terbaik berbasis web pada PT. Maju Mundur?</li>
+                            <li class="pl-2 mb-1">Bagaimana menerapkan metode Simple Additive Weighting (SAW) dalam proses penilaian kinerja karyawan?</li>
+                        </ol>
+                        <h3 class="font-bold mb-2 mt-6">1.3 Batasan Masalah</h3>
+                        <p class="mb-4">Agar penelitian ini lebih terarah, maka batasan masalahnya adalah:</p>
+                        <ol class="list-decimal pl-5 mb-4">
+                            <li class="pl-2 mb-1">Sistem dibangun berbasis web menggunakan bahasa pemrograman PHP dan database MySQL.</li>
+                            <li class="pl-2 mb-1">Kriteria penilaian dibatasi pada Kedisiplinan, Tanggung Jawab, Kerjasama, dan Pencapaian Target.</li>
+                            <li class="pl-2 mb-1">Metode perhitungan yang digunakan murni hanya metode SAW.</li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -325,26 +340,19 @@
             // Trigger reflow
             void modal.offsetWidth;
             modal.classList.remove('opacity-0');
-            modal.querySelector('div').classList.remove('scale-95');
+            modal.querySelector('.modal-panel').classList.remove('scale-95');
         }
 
         function closePreview(modalId) {
             const modal = document.getElementById(modalId);
             modal.classList.add('opacity-0');
-            modal.querySelector('div').classList.add('scale-95');
+            modal.querySelector('.modal-panel').classList.add('scale-95');
             setTimeout(() => {
                 modal.classList.add('hidden');
             }, 300);
         }
         
-        // Close on background click
-        document.querySelectorAll('[id^="modal-"]').forEach(modal => {
-            modal.addEventListener('click', function(e) {
-                if (e.target === this) {
-                    closePreview(this.id);
-                }
-            });
-        });
+        // Background click is handled directly by onclick on the modal-overlay div
     </script>
 </main>
 <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
